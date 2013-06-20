@@ -11,6 +11,7 @@ VIDEOS_PATH="#{HOME_PATH}Videos/"
 DEV_PATH="#{HOME_PATH}dev/"
 RUN_GPIO_PATH="#{DEV_PATH}wiringPi/gpio/run_"
 IRREMOTE_PATH="#{DEV_PATH}irremote/write.py "
+HEYU_PATH="/home/pi/dev/heyu-2.11-rc1/heyu -c #{ENV['HOME']}/.heyu/x10config "
 video_stdin = nil
 video_thr = nil
 get '/' do
@@ -20,6 +21,12 @@ get '/salon/:action' do |action|
     arduino = TCPSocket.new '192.168.0.177', 42
     arduino.puts "#{action == "on" ? 0:1}02"
     arduino.close
+end
+get '/salon/lamp/dim/:value' do |value|
+    `#{HEYU_PATH} dim E1 #{value}`
+end
+get '/salon/lamp/:action' do |action|
+    `#{HEYU_PATH} #{action} E1`
 end
 get '/store/:action' do |action|
     system "#{RUN_GPIO_PATH}#{action}"
