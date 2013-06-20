@@ -6,6 +6,7 @@ require 'socket'
 require 'json'
 HOME_PATH=ENV['HOME'] + "/"
 OMXPLAYER="/usr/bin/omxplayer"
+MEDIAPLAYER=File.exists?(OMXPLAYER)?"#{OMXPLAYER} -o local -s":"mplayer"
 VIDEOS_PATH="#{HOME_PATH}Videos/"
 DEV_PATH="#{HOME_PATH}dev/"
 RUN_GPIO_PATH="#{DEV_PATH}wiringPi/gpio/run_"
@@ -46,16 +47,14 @@ get '/video/control/:action' do |action|
 end
 get '/media/play/:name' do |name|
     video_stdin.write("q") if not video_stdin.nil?
-    video_stdin, stdout, stderr, video_thr = Open3.popen3("#{OMXPLAYER} -o local -s #{VIDEOS_PATH}#{name}")
+    video_stdin, stdout, stderr, video_thr = Open3.popen3("#{MEDIAPLAYER} \"#{VIDEOS_PATH}#{name}\"")
     Thread.new do
         puts "reading stdout"
         stdout.each_line {|line| puts line }
     end
 end
 get '/disk/used' do
-    line = ""
-    `df /`.each_line { |l| line = l }
-    line.split[4]
+    `df /`.split("\n").last.split[4]
 end
 get '/media/remove/:name' do |name|
     File.delete("#{VIDEOS_PATH}#{name}")
