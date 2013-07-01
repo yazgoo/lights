@@ -93,6 +93,7 @@ post '/media/download/start/:name' do |name|
                 end
             end
         end
+        download_threads[name] = nil
     end
 end
 get '/disk/used' do
