@@ -43,7 +43,7 @@ get '/video/list' do
         Dir["*.mp4"].sort {|a,b| File.ctime(a) <=> File.ctime(b) }.reverse.each do |video|
             thread = download_threads[video]
             files << {:name => video,
-                :size => (thread.nil? ? File.new(video).size : ((thread.thread_variable_get(:current) * 100 / + thread.thread_variable_get(:size)).to_s + "%"))
+                :size => (thread.nil? ? File.new(video).size : ((thread.instance_variable_get("@csize") * 100 / + thread.instance_variable_get("@size")).to_s + "%"))
              }
         end
     end
@@ -72,16 +72,15 @@ get '/media/download/start' do |name|
         redirected = true
         while redirected
             Net::HTTP.start(url.host) do |http|
-                p url.request_uri
                 http.request_get(url.request_uri) do |resp|
                     if resp.header.code.to_i != 302
                         redirected = false
-                        Thread.current.thread_variable_set(:current, 0)
-                        Thread.current.thread_variable_set(:size, resp.header.content_length)
+                        Thread.current.instance_variable_set("@csize", 0)
+                        Thread.current.instance_variable_set("@size", resp.header.content_length)
                         begin
                             f = open "#{VIDEOS_PATH}#{name}", "w"
                             resp.read_body do |segment|
-                                Thread.current.thread_variable_set(:current, Thread.current.thread_variable_get(:current) + segment.size)
+                                Thread.current.instance_variable_set("@csize", Thread.current.instance_variable_get("@csize") + segment.size)
                                 f.write segment
                             end
                         ensure
@@ -90,11 +89,11 @@ get '/media/download/start' do |name|
                     else
                         redirected = true
                         url = URI resp.header['Location']
-                        p url
                     end
                 end
             end
         end
+        download_threads[name] = nil
     end
 end
 get '/disk/used' do
