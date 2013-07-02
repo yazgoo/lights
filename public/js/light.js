@@ -91,8 +91,7 @@ setInterval(disk_used, 1000 * 10);
 });
 function media_download()
 {
-    $.post('media/download/start/' +
-            $('#download').find('input[name="name"]').val(),
+    $.get('media/download/start/',
             { url: 
                 $('#download').find('input[name="url"]').val() })
 }

@@ -65,7 +65,7 @@ get '/media/play/:name' do |name|
         stdout.each_line {|line| puts line }
     end
 end
-post '/media/download/start/:name' do |name|
+get '/media/download/start' do |name|
     url = URI params[:url]
     Thread.kill(download_threads[name]) if not download_threads[name].nil?
     download_threads[name] = Thread.new do
