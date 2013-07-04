@@ -88,6 +88,30 @@ function disk_used()
 }
 disk_used();
 setInterval(disk_used, 1000 * 10);
+function get_option(i, _default)
+{
+    return "<option value='" + i + "'" + (i == _default ?
+            "selected=selected":"") + ">" + i + "</option>";
+}
+function add_range_select(max, name, def, step = 1)
+{
+    str = "<select class='modal button green' name="+name+">";
+    for(var i = 0; i < max; i += step) str += get_option(i, def);
+    if(def % step) str += get_option(i, def);
+    return str + "</select>";
+}
+$.getJSON('timer', function(data) {
+    var clock = $("#clock").empty().append(
+    add_range_select(24, "hour", data.hour)).append(
+    add_range_select(59, "minute", data.minute, 5)).
+    append('<a class="modal button green">modify time</a>');
+    clock.find('a').click(function(evt)
+        {
+            hour = clock.find('select[name="hour"]').val();
+            minute = clock.find('select[name="minute"]').val();
+            $.get('timer/' + hour + '/' + minute);
+        });
+});
 });
 function media_download()
 {

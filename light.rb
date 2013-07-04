@@ -102,3 +102,10 @@ end
 get '/media/remove/:name' do |name|
     File.delete("#{VIDEOS_PATH}#{name}")
 end
+get '/timer' do
+    minute, hour = `crontab -l`.split("\n").collect { |line| line if line.match('# timer$') }.delete_if {|x| x == nil}.first.split
+    {:hour => hour, :minute => minute}.to_json
+end
+get '/timer/:hour/:minute' do |hour, minute|
+    `crontab -l | sed 's/^[^\\s]\\+\\s[^\\s]\\+\\s\\(.\\s.\\s.\\s.*# timer\\)$/#{minute} #{hour} \\1/' | crontab -`
+end
