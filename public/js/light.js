@@ -1,11 +1,11 @@
 function add_actors_groups(actorsGroups, container)
 {
-    $(container).empty(str);
+    $('#' + container).empty(str);
     for(var k in actorsGroups)
     {
         var actors = actorsGroups[k];
         var str = "";
-        str += '<div class="tiles"> <input type="hidden" value="" id="action-tiles-'+k+'" class="value">';
+        str += '<div class="tiles"> <input type="hidden" value="" id="action-tiles-'+container+'-'+k+'" class="value">';
         for(var i in actors)
         {
             for(var j in actors[i])
@@ -19,8 +19,8 @@ function add_actors_groups(actorsGroups, container)
             }
         }
         str += "</div>"
-            $(container).append(str);
-        $('input#action-tiles-' + k).on('change', function() {
+            $('#' + container).append(str);
+        $('input#action-tiles-'+container+'-' + k).on('change', function() {
             var url = $(this).val().replace(/___/g, "---").replace(/__/g, ".").replace(/_/g, "/").replace(/---/g, "_");
             $.get(url , function(data)
                 {
@@ -59,7 +59,7 @@ $(document).ready(function(){
     ],
 },
     ]
-    add_actors_groups(actorsGroups, "#content");
+    add_actors_groups(actorsGroups, "content");
     function load_videos() {
         $.getJSON('video/list', function(data) {
             actorsGroups = [ { "media": [ ] } ]
@@ -74,7 +74,7 @@ $(document).ready(function(){
                     "name": data[k]['name'], "specific": "remove", "small": true}
                 );
         }
-        add_actors_groups(actorsGroups, "#videos");
+        add_actors_groups(actorsGroups, "videos");
         });
     }
 load_videos();

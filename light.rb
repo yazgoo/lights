@@ -55,7 +55,7 @@ end
 get '/video/on-off' do
     system "#{IRREMOTE_PATH}10C8E11E"
 end
-# list the mp4 videos as JSON
+# list the videos as JSON
 # Each item in the list contains to attributes
 # -name: the file name
 # -size: the size in bytes, 
@@ -63,7 +63,7 @@ end
 get '/video/list' do
     files = []
     Dir.chdir VIDEOS_PATH do |dir|
-        Dir["*.mp4"].sort {|a,b| File.ctime(a) <=> File.ctime(b) }.reverse.each do |video|
+        Dir["*"].sort {|a,b| File.ctime(a) <=> File.ctime(b) }.reverse.each do |video|
             thread = download_threads[video]
             files << {:name => video,
                 :size => (thread.nil? ? File.new(video).size : ((thread.instance_variable_get("@csize") * 100 / + thread.instance_variable_get("@size")).to_s + "%"))
@@ -105,9 +105,9 @@ get '/media/download/start' do
             http.request_get(url.request_uri) do |resp|
                 if resp.header.code.to_i != 302
                     name = resp.header['Content-Disposition'].scan(/filename="([^"]+)"/)[0][0]
+                    redirected = false
                     Thread.kill(download_threads[name]) if not download_threads[name].nil?
                     download_threads[name] = Thread.new do
-                        redirected = false
                         Thread.current.instance_variable_set("@csize", 0)
                         Thread.current.instance_variable_set("@size", resp.header.content_length)
                         begin
