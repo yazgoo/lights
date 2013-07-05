@@ -1,0 +1,23 @@
+This uses MQTT
+
+When a new thing goes up, it suscribes to /home
+
+Actuators
+
+When the console wants to know what actuators are available, it publishes to /home/actuators "list"
+Each thing then sends /home/actuators/$actuator_name/values "{$value1: {symbol: $symbol1},  $value2: {symbol: $symbol2}}"
+For example, the light of my main room, will send:
+/home/actuators/main_room_light/values "{on: {symbol: circle}, off: {symbol: circle-blank}}"
+symbols are name of symbols the ui should use for the buttons, as defined by
+http://fortawesome.github.com/Font-Awesome/.
+If the console really wants to actuate stuff, it will just have to publish:
+/home/actuators/$actuator_name "$value1"
+To switch a light on, it would be
+/home/actuators/main_room_light on
+
+Sensors
+
+A sensor will send, at a regular interval
+/home/sensors/$sensor_name "{$name1: {value: $value1, actuator: $actuator_path}, $name2: {value: value2}}"
+For example, a video lister sensor will send the following value:
+/home/sensors/videos_lister "{'name': {value: 'my video.mp4', actuator: '/home/actuators/video_player/play', {symbol: 'play'}}, 'size': {value: }"
