@@ -8,6 +8,10 @@ When the console wants to know what actuators are available, it publishes to /ho
 Each thing then sends /home/actuators/$actuator_name/values "{$value1: {symbol: $symbol1},  $value2: {symbol: $symbol2}}"
 For example, the light of my main room, will send:
 /home/actuators/main_room_light/values "{on: {symbol: circle}, off: {symbol: circle-blank}}"
+A string actuator, like a downloader, may send the following:
+/home/actuators/downloader/form "{parameters: {url: {type: string}}, submit: download}"
+A range actuator, like an alarm clock, may send the following:
+/home/actuators/alarm_clock/form "{parameters: {hour: {type: range, start: 0, end: 24, default: 6}, minute: {type: range, start: 0, end: 59, step: 10, default: 45}, submit: modify}"
 symbols are name of symbols the ui should use for the buttons, as defined by
 http://fortawesome.github.com/Font-Awesome/.
 If the console really wants to actuate stuff, it will just have to publish:
