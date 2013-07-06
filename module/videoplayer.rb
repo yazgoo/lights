@@ -25,9 +25,4 @@ class VideoPlayer < HomeModule
     end
 end
 player = VideoPlayer.new
-player.call :start, "True.Blood.S06E01.REPACK.HDTV.x264-2HD.mp4"
-sleep 3
-player.call :pause
-sleep 3
-player.call :pause
 sleep 100
