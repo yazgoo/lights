@@ -1,12 +1,6 @@
 lights
 ======
 
-A home automation system
-
-
-goals
-=====
-
 The goal of this project is to manage my home automation
 and multimedia parts with a simple web UI.
 It runs on a raspberry pi.
