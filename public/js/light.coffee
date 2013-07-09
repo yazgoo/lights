@@ -10,7 +10,6 @@ get_parametered_input = (dest, key, value) ->
     for k, v of value["parameters"]
         str += "<p><input placeholder='#{k}' id='#{window._id}' name='#{k}'/></p>"
     str += "<input type='button'"
-    sharp = '#'
     str += "onclick='window._act(\"#{dest}\", \"#{key} \" + $(\"#\" + #{window._id}).val())' "
     str += "value='#{key}'>"
     window._id++
