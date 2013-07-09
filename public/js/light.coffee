@@ -3,7 +3,7 @@ window._act = (dest, key) ->
     window._pub dest.replace(/\/values/, ''), key
 get_tile = (dest, key, value) ->
     "<div class='tiles' style='display: inline;'><div class=
-    'small tile'><i class='icon-#{key}' onclick='
+    'small tile'><i class='icon-#{value['icon']}' onclick='
     window._act(\"#{dest}\", \"#{key}\");'></i></div></div>"
 get_parametered_input = (dest, key, value) ->
     str = ""

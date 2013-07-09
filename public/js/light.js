@@ -9,7 +9,7 @@
   };
 
   get_tile = function(dest, key, value) {
-    return "<div class='tiles' style='display: inline;'><div class=    'small tile'><i class='icon-" + key + "' onclick='    window._act(\"" + dest + "\", \"" + key + "\");'></i></div></div>";
+    return "<div class='tiles' style='display: inline;'><div class=    'small tile'><i class='icon-" + value['icon'] + "' onclick='    window._act(\"" + dest + "\", \"" + key + "\");'></i></div></div>";
   };
 
   get_parametered_input = function(dest, key, value) {
