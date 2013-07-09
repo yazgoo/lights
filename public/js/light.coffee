@@ -20,10 +20,7 @@ get_control = (dest, key, value) ->
     else
         get_tile dest, key, value
 add_values = (msg) -> 
-    console.log msg
-    console.log msg.destinationName
     n = msg.destinationName.replace(/\/values/, '').replace('/home/actuators/', '')
-    console.log n
     $("#content").append "<h3>#{n}</h3>"
     for k, v of $.parseJSON msg.payloadString
         $("#content").append get_control msg.destinationName, k, v
