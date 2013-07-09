@@ -18,7 +18,7 @@
     _ref = value["parameters"];
     for (k in _ref) {
       v = _ref[k];
-      str += "<p><input placeholder='" + k + "'         id='" + window._id + "' name='" + k + "'/></p>";
+      str += "<input placeholder='" + k + "'         id='" + window._id + "' name='" + k + "'/>";
     }
     str += "<input type='button' onclick='window._act(\"" + dest + "\",    \"" + key + " \" + $(\"#\" + " + window._id + ").val())' value='" + key + "'>";
     window._id++;
@@ -34,15 +34,18 @@
   };
 
   add_values = function(msg) {
-    var k, v, _ref, _results;
+    var k, n, v, _ref;
     console.log(msg);
+    console.log(msg.destinationName);
+    n = msg.destinationName.replace(/\/values/, '').replace('/home/actuators/', '');
+    console.log(n);
+    $("#content").append("<h3>" + n + "</h3>");
     _ref = $.parseJSON(msg.payloadString);
-    _results = [];
     for (k in _ref) {
       v = _ref[k];
-      _results.push($("#content").append(get_control(msg.destinationName, k, v)));
+      $("#content").append(get_control(msg.destinationName, k, v));
     }
-    return _results;
+    return $("#content").append("<br/>");
   };
 
   window._pub = function(topic, str) {

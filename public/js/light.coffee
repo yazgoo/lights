@@ -8,8 +8,8 @@ get_tile = (dest, key, value) ->
 get_parametered_input = (dest, key, value) ->
     str = ""
     for k, v of value["parameters"]
-        str += "<p><input placeholder='#{k}' 
-        id='#{window._id}' name='#{k}'/></p>"
+        str += "<input placeholder='#{k}' 
+        id='#{window._id}' name='#{k}'/>"
     str += "<input type='button' onclick='window._act(\"#{dest}\",
     \"#{key} \" + $(\"#\" + #{window._id}).val())' value='#{key}'>"
     window._id++
@@ -21,8 +21,13 @@ get_control = (dest, key, value) ->
         get_tile dest, key, value
 add_values = (msg) -> 
     console.log msg
+    console.log msg.destinationName
+    n = msg.destinationName.replace(/\/values/, '').replace('/home/actuators/', '')
+    console.log n
+    $("#content").append "<h3>#{n}</h3>"
     for k, v of $.parseJSON msg.payloadString
         $("#content").append get_control msg.destinationName, k, v
+    $("#content").append "<br/>"
 window._pub = (topic, str) ->
     console.log topic, str
     message = new Messaging.Message str
