@@ -5,6 +5,7 @@ get_tile = (dest, key, value) ->
     str += "'small tile'><i class='icon-#{key}' onclick='"
     str += "window._act(\"#{dest}\", \"#{key}\");'></i></div></div>"
 add_values = (msg) -> 
+    p msg
     for k, v of $.parseJSON msg.payloadString
         $("#content").append get_tile msg.destinationName, k, v
 window._pub = (topic, str) ->
@@ -21,5 +22,4 @@ client.connect
     onSuccess : () ->
         client.subscribe "/home/actuators/#"
         window._pub "/home/actuators", "list"
-    onFailure : (e) ->
-        console.log e
+    onFailure : (e) -> console.log e
