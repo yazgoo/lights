@@ -24,5 +24,3 @@ class VideoPlayer < HomeModule
         }
     end
 end
-player = VideoPlayer.new
-sleep 100

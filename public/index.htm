@@ -3,39 +3,22 @@
     <head>
         <title>Lights</title>
         <meta charset="utf-8">
-        <meta name="description" content="Seven Tears band page">
-        <meta name="keywords" content="Seven,Tears,Band,Rock,Seventies">
+        <meta name="description" content="lights.js">
+        <meta name="keywords" content="automation,light">
         <script src="./js/libs/jquery-1.9.1.min.js"></script>
         <link type="text/css" rel="stylesheet" href="css/groundwork.css">
         <!--[if IE]><link type="text/css" rel="stylesheet" href="css/groundwork-ie.css"><![endif]-->
         <!--[if lt IE 9]><script type="text/javascript" src="js/libs/html5shiv.min.js"></script><![endif]-->
         <!--[if IE 7]><link type="text/css" rel="stylesheet" href="css/font-awesome-ie7.min.css"><![endif]-->
+        <script src="./js/libs/mqttws31.js"></script>
         <script src="./js/light.js"></script>
     </head>
     <body>
-        <div class="one sixth">
-        </div>
+        <div class="one sixth"></div>
         <div class="four sixth">
-            <p>
-            <a class="modal button green" href="#download">
-                Download
-            </a>
-            <a id="clock" style="display: inline;">
-            </a>
-            <div id="content">
-            </div>
-            <div id="disk_used">
-            </div>
-            <div id="videos">
-            </div>
-            <div id="download" class="mfp-hide">
-                <p><input placeholder="url" name="url"/></p>
-                <button type="button"
-                    onclick="media_download();">Download</button>
-            </div>
+            <div id="content"></div>
         </div>
-        <div class="one sixth">
-        </div>
+        <div class="one sixth"></div>
         <script type="text/javascript" src="./js/plugins/jquery.cycle2.js"></script>
         <script type="text/javascript" src="./js/groundwork.all.js"></script>
     </body>
