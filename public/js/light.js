@@ -9,24 +9,18 @@
   };
 
   get_tile = function(dest, key, value) {
-    var str;
-    str = "<div class='tiles' style='display: inline;'><div class=";
-    str += "'small tile'><i class='icon-" + key + "' onclick='";
-    return str += "window._act(\"" + dest + "\", \"" + key + "\");'></i></div></div>";
+    return "<div class='tiles' style='display: inline;'><div class=    'small tile'><i class='icon-" + key + "' onclick='    window._act(\"" + dest + "\", \"" + key + "\");'></i></div></div>";
   };
 
   get_parametered_input = function(dest, key, value) {
-    var k, sharp, str, v, _ref;
+    var k, str, v, _ref;
     str = "";
     _ref = value["parameters"];
     for (k in _ref) {
       v = _ref[k];
-      str += "<p><input placeholder='" + k + "' id='" + window._id + "' name='" + k + "'/></p>";
+      str += "<p><input placeholder='" + k + "'         id='" + window._id + "' name='" + k + "'/></p>";
     }
-    str += "<input type='button'";
-    sharp = '#';
-    str += "onclick='window._act(\"" + dest + "\", \"" + key + " \" + $(\"#\" + " + window._id + ").val())' ";
-    str += "value='" + key + "'>";
+    str += "<input type='button' onclick='window._act(\"" + dest + "\",    \"" + key + " \" + $(\"#\" + " + window._id + ").val())' value='" + key + "'>";
     window._id++;
     return str;
   };
