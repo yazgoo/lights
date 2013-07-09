@@ -1,13 +1,29 @@
+window._id = 0
 window._act = (dest, key) ->
     window._pub dest.replace(/\/values/, ''), key
 get_tile = (dest, key, value) ->
     str = "<div class='tiles' style='display: inline;'><div class="
     str += "'small tile'><i class='icon-#{key}' onclick='"
     str += "window._act(\"#{dest}\", \"#{key}\");'></i></div></div>"
+get_parametered_input = (dest, key, value) ->
+    str = ""
+    for k, v of value["parameters"]
+        str += "<p><input placeholder='#{k}' id='#{window._id}' name='#{k}'/></p>"
+    str += "<input type='button'"
+    sharp = '#'
+    str += "onclick='window._act(\"#{dest}\", \"#{key} \" + $(\"#\" + #{window._id}).val())' "
+    str += "value='#{key}'>"
+    window._id++
+    str
+get_control = (dest, key, value) ->
+    if value['parameters']?
+        get_parametered_input dest, key, value
+    else
+        get_tile dest, key, value
 add_values = (msg) -> 
-    p msg
+    console.log msg
     for k, v of $.parseJSON msg.payloadString
-        $("#content").append get_tile msg.destinationName, k, v
+        $("#content").append get_control msg.destinationName, k, v
 window._pub = (topic, str) ->
     console.log topic, str
     message = new Messaging.Message str
