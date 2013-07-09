@@ -2,16 +2,16 @@ window._id = 0
 window._act = (dest, key) ->
     window._pub dest.replace(/\/values/, ''), key
 get_tile = (dest, key, value) ->
-    str = "<div class='tiles' style='display: inline;'><div class="
-    str += "'small tile'><i class='icon-#{key}' onclick='"
-    str += "window._act(\"#{dest}\", \"#{key}\");'></i></div></div>"
+    "<div class='tiles' style='display: inline;'><div class=
+    'small tile'><i class='icon-#{key}' onclick='
+    window._act(\"#{dest}\", \"#{key}\");'></i></div></div>"
 get_parametered_input = (dest, key, value) ->
     str = ""
     for k, v of value["parameters"]
-        str += "<p><input placeholder='#{k}' id='#{window._id}' name='#{k}'/></p>"
-    str += "<input type='button'"
-    str += "onclick='window._act(\"#{dest}\", \"#{key} \" + $(\"#\" + #{window._id}).val())' "
-    str += "value='#{key}'>"
+        str += "<p><input placeholder='#{k}' 
+        id='#{window._id}' name='#{k}'/></p>"
+    str += "<input type='button' onclick='window._act(\"#{dest}\",
+    \"#{key} \" + $(\"#\" + #{window._id}).val())' value='#{key}'>"
     window._id++
     str
 get_control = (dest, key, value) ->
