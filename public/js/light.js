@@ -13,12 +13,29 @@
   };
 
   get_parametered_input = function(dest, key, value) {
-    var k, str, v, _ref;
+    var i, k, str, v, _ref;
     str = "";
     _ref = value["parameters"];
     for (k in _ref) {
       v = _ref[k];
-      str += "<input placeholder='" + k + "'         id='" + window._id + "' name='" + k + "'/>";
+      switch (v.type) {
+        case "string":
+          str += "<input placeholder='" + k + "' id='" + window._id + "' name='" + k + "'/>";
+          break;
+        case "range":
+          str += "<select class='modal button green'  name='" + k + "'>                    " + ([
+            (function() {
+              var _i, _ref1, _ref2, _results;
+              _results = [];
+              for (i = _i = _ref1 = v['start'], _ref2 = v['end']; _ref1 <= _ref2 ? _i <= _ref2 : _i >= _ref2; i = _ref1 <= _ref2 ? ++_i : --_i) {
+                if (i % v.step === 0) {
+                  _results.push("<option value='" + i + "' " + (v['default'] === i ? "selected=selected" : void 0) + ">" + i + "</option>");
+                }
+              }
+              return _results;
+            })()
+          ].join(" ")) + "                    </select>";
+      }
     }
     str += "<input type='button' onclick='window._act(\"" + dest + "\",    \"" + key + " \" + $(\"#\" + " + window._id + ").val())' value='" + key + "'>";
     window._id++;

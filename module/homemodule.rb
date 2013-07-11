@@ -14,6 +14,10 @@ class MqttManaged
     def mqtt_publish_values
         topic = "#{Actuator}/#{@name}/values"
         @@client.publish topic, @actions.to_json
+        # @@client.instance_variable_get(:@socket).flush
+        # I know, this is hacky, but otherwise publish
+        # show up grouped in the browser
+        sleep 0.05
     end
     def self.mqtt_run
         @@client = MQTT::Client.connect(Host)
@@ -35,7 +39,8 @@ class MqttManaged
                         end
                     end
                 end
-            rescue
+            rescue err
+                p err
             end
         end
     end

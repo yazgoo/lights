@@ -2,8 +2,9 @@ load "#{File.dirname __FILE__}/homemodule.rb"
 class Alarm < HomeModule
     def setup
         action :set, {:parameters => {
-            :hour => {:type => :integer, :default => 9},
-            :minute => {:type => :integer, :default => 15}}},
+            :hour => {:type => :range, :start => 0, :end => 23, :step => 1, :default => 9},
+            :minute => {:type => :range,
+                :default => 15, :start => 0, :end => 59, :step => 5}}},
             Proc.new { |name, path|
             puts "set"
         }

@@ -1,3 +1,4 @@
+#!/usr/bin/env ruby
 Dir[File.dirname(__FILE__) + "/*.rb"].each do |file|
     load file if not ["modules.rb", "homemodule.rb"].include? File.basename file
 end

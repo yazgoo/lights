@@ -8,8 +8,12 @@ get_tile = (dest, key, value) ->
 get_parametered_input = (dest, key, value) ->
     str = ""
     for k, v of value["parameters"]
-        str += "<input placeholder='#{k}' 
-        id='#{window._id}' name='#{k}'/>"
+        switch v.type
+            when "string" then str += "<input placeholder='#{k}' id='#{window._id}' name='#{k}'/>"
+            when "range"
+                str += "<select class='modal button green'  name='#{k}'>
+                    #{["<option value='#{i}' #{"selected=selected" if v['default'] == i}>#{i}</option>" for i in [v['start']..v['end']] when i % v.step == 0].join(" ")}
+                    </select>"
     str += "<input type='button' onclick='window._act(\"#{dest}\",
     \"#{key} \" + $(\"#\" + #{window._id}).val())' value='#{key}'>"
     window._id++
@@ -19,7 +23,7 @@ get_control = (dest, key, value) ->
         get_parametered_input dest, key, value
     else
         get_tile dest, key, value
-add_values = (msg) -> 
+add_values = (msg) ->
     console.log msg.payloadString
     console.log $.parseJSON msg.payloadString
     $("#content").append "<h3>#{msg.destinationName.replace(
