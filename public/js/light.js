@@ -34,23 +34,24 @@
   };
 
   add_values = function(msg) {
-    var k, n, v, _ref;
-    console.log(msg);
-    console.log(msg.destinationName);
-    n = msg.destinationName.replace(/\/values/, '').replace('/home/actuators/', '');
-    console.log(n);
-    $("#content").append("<h3>" + n + "</h3>");
-    _ref = $.parseJSON(msg.payloadString);
-    for (k in _ref) {
-      v = _ref[k];
-      $("#content").append(get_control(msg.destinationName, k, v));
-    }
-    return $("#content").append("<br/>");
+    var k, v;
+    console.log(msg.payloadString);
+    console.log($.parseJSON(msg.payloadString));
+    return $("#content").append("<h3>" + (msg.destinationName.replace('/home/actuators/([^/]+)/values', '$1')) + "</h3>" + (((function() {
+      var _ref, _results;
+      _ref = $.parseJSON(msg.payloadString);
+      _results = [];
+      for (k in _ref) {
+        v = _ref[k];
+        _results.push(get_control(msg.destinationName, k, v));
+      }
+      return _results;
+    })()).join(" ")) + "<br/>");
   };
 
   window._pub = function(topic, str) {
     var message;
-    console.log(topic, str);
+    console.log(str);
     message = new Messaging.Message(str);
     message.destinationName = topic;
     return window._cli.send(message);

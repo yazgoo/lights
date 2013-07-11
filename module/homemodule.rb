@@ -18,21 +18,24 @@ class MqttManaged
     def self.mqtt_run
         @@client = MQTT::Client.connect(Host)
         Thread.new do
-            MQTT::Client.connect(Host) do |c|
-                c.get(Actuator + "/#") do |topic,message|
-                    puts topic, message
-                    if topic == Actuator and message == 'list'
-                        @@modules.each do |mod|
-                            mod.mqtt_publish_values
-                        end
-                    else
-                        @@modules.each do |mod|
-                            if topic == "#{Actuator}/#{mod.name}"
-                                mod.call *message.split
+            begin
+                MQTT::Client.connect(Host) do |c|
+                    c.get(Actuator + "/#") do |topic,message|
+                        puts topic, message
+                        if topic == Actuator and message == 'list'
+                            @@modules.each do |mod|
+                                mod.mqtt_publish_values
+                            end
+                        else
+                            @@modules.each do |mod|
+                                if topic == "#{Actuator}/#{mod.name}"
+                                    mod.call *message.split
+                                end
                             end
                         end
                     end
                 end
+            rescue
             end
         end
     end

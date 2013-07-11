@@ -20,13 +20,15 @@ get_control = (dest, key, value) ->
     else
         get_tile dest, key, value
 add_values = (msg) -> 
-    n = msg.destinationName.replace(/\/values/, '').replace('/home/actuators/', '')
-    $("#content").append "<h3>#{n}</h3>"
-    for k, v of $.parseJSON msg.payloadString
-        $("#content").append get_control msg.destinationName, k, v
-    $("#content").append "<br/>"
+    console.log msg.payloadString
+    console.log $.parseJSON msg.payloadString
+    $("#content").append "<h3>#{msg.destinationName.replace(
+    '/home/actuators/([^/]+)/values', '$1')}</h3>#{
+        (for k, v of $.parseJSON msg.payloadString
+            get_control msg.destinationName, k, v).join(" ")
+    }<br/>"
 window._pub = (topic, str) ->
-    console.log topic, str
+    console.log str
     message = new Messaging.Message str
     message.destinationName = topic
     window._cli.send message
