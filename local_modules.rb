@@ -1,0 +1,5 @@
+# declare here what modules you want to instantiate localy
+# launch these with module/modules.rb
+VideoPlayer.new
+Heyu.new
+Alarm.new
