@@ -6,7 +6,7 @@ class Alarm < HomeModule
             :minute => {:type => :range,
                 :default => 15, :start => 0, :end => 59, :step => 5}}},
             Proc.new { |name, path|
-            puts "set"
+            puts "set #{name}, #{path}"
         }
     end
 end

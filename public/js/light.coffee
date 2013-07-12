@@ -5,17 +5,19 @@ get_tile = (dest, key, value) ->
     "<div class='tiles' style='display: inline;'><div class=
     'small tile'><i class='icon-#{value['icon']}' onclick='
     window._act(\"#{dest}\", \"#{key}\");'></i></div></div>"
+get_options = (v) ->
+    ["<option value='#{i}' #{"selected=selected" if v['default'] == i}
+    >#{i}</option>" for i in [v['start']..v['end']] when i % v.step == 0].join("\n")
+window._get_values = (id) ->
+    {name: c.name, value: c.value} for c in $('#' + id).children()
 get_parametered_input = (dest, key, value) ->
-    str = ""
-    for k, v of value["parameters"]
+    str = "<form  id='#{window._id}'>"
+    str += for k, v of value["parameters"]
         switch v.type
-            when "string" then str += "<input placeholder='#{k}' id='#{window._id}' name='#{k}'/>"
-            when "range"
-                str += "<select class='modal button green'  name='#{k}'>
-                    #{["<option value='#{i}' #{"selected=selected" if v['default'] == i}>#{i}</option>" for i in [v['start']..v['end']] when i % v.step == 0].join(" ")}
-                    </select>"
-    str += "<input type='button' onclick='window._act(\"#{dest}\",
-    \"#{key} \" + $(\"#\" + #{window._id}).val())' value='#{key}'>"
+            when "string" then "<input placeholder='#{k}' name='#{k}'/>"
+            when "range" then "<select class='modal button green' name='#{k}'>#{get_options v}</select>"
+    str += "</form><input type='button' onclick='window._act(\"#{dest}\",
+    \"#{key} \" + window._get_values(#{window._id}))' value='#{key}'>"
     window._id++
     str
 get_control = (dest, key, value) ->
