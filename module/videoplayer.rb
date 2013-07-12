@@ -17,7 +17,7 @@ class VideoPlayer < HomeModule
             }
         end
         action :start, {:parameters => {:name => {:type => :string}}},
-            Proc.new { |name, path|
+            Proc.new { |name, parameters|
             call :stop
             stdin, stdout, stderr, thr = Open3.popen3(cmd + path)
             Thread.new { stdout.each_line {|line| puts line } }

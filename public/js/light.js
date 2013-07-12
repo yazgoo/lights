@@ -29,17 +29,14 @@
   };
 
   window._get_values = function(id) {
-    var c, _i, _len, _ref, _results;
+    var c, result, _i, _len, _ref;
+    result = {};
     _ref = $('#' + id).children();
-    _results = [];
     for (_i = 0, _len = _ref.length; _i < _len; _i++) {
       c = _ref[_i];
-      _results.push({
-        name: c.name,
-        value: c.value
-      });
+      result[c.name] = c.value;
     }
-    return _results;
+    return JSON.stringify(result);
   };
 
   get_parametered_input = function(dest, key, value) {

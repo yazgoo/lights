@@ -9,7 +9,9 @@ get_options = (v) ->
     ["<option value='#{i}' #{"selected=selected" if v['default'] == i}
     >#{i}</option>" for i in [v['start']..v['end']] when i % v.step == 0].join("\n")
 window._get_values = (id) ->
-    {name: c.name, value: c.value} for c in $('#' + id).children()
+    result = {}
+    result[c.name] = c.value for c in $('#' + id).children()
+    JSON.stringify result
 get_parametered_input = (dest, key, value) ->
     str = "<form  id='#{window._id}'>"
     str += for k, v of value["parameters"]

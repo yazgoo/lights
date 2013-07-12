@@ -59,6 +59,6 @@ class HomeModule < MqttManaged
     def call name, *parameters
         name = name.to_s
         return if @actions[name].nil?
-        @procs[name].call(name, parameters[0])
+        @procs[name].call name, JSON.parse(parameters[0])
     end
 end
