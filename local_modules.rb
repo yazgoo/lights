@@ -1,6 +1,17 @@
 # declare here what modules you want to instantiate localy
 # launch these with module/modules.rb
+RUN_GPIO_PATH="#{ENV['HOME']}/dev/wiringPi/gpio/run_"
+VIDEOS_PATH="#{ENV['HOME']}/Videos"
 VideoPlayer.new
+Downloader.new VIDEOS_PATH
 Heyu.new
 Alarm.new "alarm"
-FileLister.new "#{ENV['HOME']}/Videos"
+FileLister.new VIDEOS_PATH
+System.new :name => "shutter",
+    :commands => {:up => {:command => RUN_GPIO_PATH + "up", :icon => "arrow-up"},
+        :down => {:command => RUN_GPIO_PATH + "down", :icon => "arrow-down"} }
+System.new :name => "videoprojector", :commands => {:onoff => {:command =>
+    "#{ENV['HOME']}/dev/irremote/write.py 10C8E11E", :icon => "off"} }
+Tcp.new :name => "salon", :host => "192.168.0.177", :port => 42, :messages => {
+    :on => {:message => "002", :icon => "circle"},
+    :off => {:message => "102", :icon => "circle-blank"}}

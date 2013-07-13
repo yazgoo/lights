@@ -42,7 +42,7 @@
   get_parametered_input = function(dest, key, value) {
     var k, str, v;
     str = "<form  id='" + window._id + "'>";
-    str += (function() {
+    str += ((function() {
       var _ref, _results;
       _ref = value["parameters"];
       _results = [];
@@ -60,7 +60,7 @@
         }
       }
       return _results;
-    })();
+    })()).join(" ");
     str += "</form><input type='button' onclick='window._act(\"" + dest + "\",    \"" + key + " \" + window._get_values(" + window._id + "))' value='" + key + "'>";
     window._id++;
     return str;

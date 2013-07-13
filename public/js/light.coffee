@@ -14,10 +14,10 @@ window._get_values = (id) ->
     JSON.stringify result
 get_parametered_input = (dest, key, value) ->
     str = "<form  id='#{window._id}'>"
-    str += for k, v of value["parameters"]
+    str += (for k, v of value["parameters"]
         switch v.type
             when "string" then "<input placeholder='#{k}' name='#{k}' value='#{if v.default? then v.default else '' }'/>"
-            when "range" then "<select class='modal button green' name='#{k}'>#{get_options v}</select>"
+            when "range" then "<select class='modal button green' name='#{k}'>#{get_options v}</select>").join " "
     str += "</form><input type='button' onclick='window._act(\"#{dest}\",
     \"#{key} \" + window._get_values(#{window._id}))' value='#{key}'>"
     window._id++
