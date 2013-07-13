@@ -2,4 +2,5 @@
 # launch these with module/modules.rb
 VideoPlayer.new
 Heyu.new
-Alarm.new
+Alarm.new "alarm"
+FileLister.new "#{ENV['HOME']}/Videos"

@@ -1,4 +1,3 @@
-load "#{File.dirname __FILE__}/homemodule.rb"
 class Heyu < HomeModule
     def setup
         config = "#{ENV['HOME']}/.heyu/x10config"

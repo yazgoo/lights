@@ -1,4 +1,3 @@
-load "#{File.dirname __FILE__}/homemodule.rb"
 require 'open3'
 class VideoPlayer < HomeModule
     def setup
@@ -7,7 +6,7 @@ class VideoPlayer < HomeModule
             "forward" => "\b[C", "fast-forward" => "\b[A"}
         omx = "/usr/bin/omxplayer"
         cmd = File.exists?(omx)?"#{omx} -o local -s":"mplayer" +
-            " #{ENV['HOME']}/Videos/"
+            " \"#{ENV['HOME']}/Videos/"
         thr = stdin = nil
         keys.each do |name, code|
             action name, {:icon => name}, Proc.new { |name|
@@ -17,9 +16,11 @@ class VideoPlayer < HomeModule
             }
         end
         action :start, {:parameters => {:name => {:type => :string}}},
-            Proc.new { |name, parameters|
+            Proc.new { |name, video|
             call :stop
-            stdin, stdout, stderr, thr = Open3.popen3(cmd + path)
+            p video
+            stdin, stdout, stderr, thr = Open3.popen3(
+               cmd + video + "\"")
             Thread.new { stdout.each_line {|line| puts line } }
         }
     end

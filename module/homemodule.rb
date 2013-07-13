@@ -1,23 +1,35 @@
 require 'rubygems'
 require 'json'
 require 'mqtt'
+require 'timers'
+class Proc
+    def to_json *a
+        self.yield.to_json *a
+    end
+end
 class MqttManaged 
     Actuator = '/home/actuators'
+    Sensor = '/home/sensors'
     Host = 'localhost'
     @@modules = []
     attr_reader :name
-    def initialize
+    def initialize params
         self.class.mqtt_run if @@modules.empty?
         @name = self.class.name
         @@modules << self
     end
     def mqtt_publish_values
+        return if @actions.empty?
         topic = "#{Actuator}/#{@name}/values"
         @@client.publish topic, @actions.to_json
         # @@client.instance_variable_get(:@socket).flush
         # I know, this is hacky, but otherwise publish
         # show up grouped in the browser
         sleep 0.05
+    end
+    def send_sense name, values
+        @@client.publish "#{Sensor}/#{@name}/#{name}",
+        values.to_json
     end
     def self.mqtt_run
         @@client = MQTT::Client.connect(Host)
@@ -39,8 +51,8 @@ class MqttManaged
                         end
                     end
                 end
-            rescue err
-                p err
+            rescue
+                p $!
             end
         end
     end
@@ -50,15 +62,24 @@ class HomeModule < MqttManaged
         @procs[name.to_s] = _proc
         @actions[name.to_s] = parameters
     end
-    def initialize
-        super
+    def sense name, parameters
+        timers = Timers.new
+        timers.every parameters[:period][:seconds] do
+            send_sense name, yield
+        end
+        Thread.new { loop { timers.wait } }
+    end 
+    def initialize params = nil
+        super params
         @actions = {}
+        @params = params
         @procs = {}
         setup
     end
     def call name, *parameters
         name = name.to_s
         return if @actions[name].nil?
-        @procs[name].call name, JSON.parse(parameters[0])
+        params = parameters.empty? ? nil : JSON.parse(parameters[0..-1].join " ").values
+        @procs[name].call name, *params
     end
 end
