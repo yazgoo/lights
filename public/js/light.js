@@ -116,7 +116,7 @@
     return window._cli.send(message);
   };
 
-  client = new Messaging.Client("127.0.0.1", 8080, "clientId");
+  client = new Messaging.Client("192.168.0.11", 8080, "clientId");
 
   window._cli = client;
 

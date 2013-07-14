@@ -19,7 +19,7 @@ class Alarm < HomeModule
     def setup
         @name = @params
         alarm = get_cronvalues
-        set_cronvalues 9, 15 if alarm.nil?
+        set_cronvalues 9, 15, "echo 42" if alarm.nil?
         action :set, {:parameters => {
             :hour => {:type => :range, :start => 0, :end => 23, :step => 1,
                 :default => Proc.new {get_cronvalues :hour}},

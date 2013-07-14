@@ -1,11 +1,11 @@
-#!/usr/bin/env node
+#!/usr/bin/env nodejs
 net = require('net');
-var WebSocketServer = require('/usr/lib/node_modules/ws').Server
+var WebSocketServer = require('/usr/local/lib/node_modules/ws').Server
 var wss = new WebSocketServer({port: 8080});
 wss.on('connection', function(conn) {
-    var client = net.connect({port: 1883}, function() { });
+    var client = net.connect({host: 'localhost', port: 1883}, function() { console.log("connect"); });
     client.on('data', function(data) {
-        console.log(data);
+        console.log("data: " + data);
         conn.send(data);
     });
     client.on('end', function() { conn.close(); });
