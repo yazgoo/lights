@@ -13,4 +13,4 @@ Prerequisites
 - sudo npm -g install ws
 - sudo gem install mqtt timers cronedit
 
-![screenshot 0](https://github.com/yazgoo/lights/raw/master/screenshot/mqtt.png)
+![screenshot 0](https://github.com/yazgoo/lights/raw/mqtt/screenshot/mqtt.png)
