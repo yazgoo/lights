@@ -9,7 +9,7 @@ class Heyu < HomeModule
                     line = line.split
                     {"on" => "", "off" => "-blank"}.each do |k, v|
                         action line[1]+"_"+k, {:icon => 'circle'+v},
-                            Proc.new { `#{heyu} #{k} #{line[2]}` }
+                            Proc.new { p `#{heyu} #{k} #{line[2]}` }
                     end
                 end
             end

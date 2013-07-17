@@ -5,7 +5,7 @@ class VideoPlayer < HomeModule
             "play" => " ", "pause" => " ", "stop" => "q", 
             "forward" => "\b[C", "fast-forward" => "\b[A"}
         omx = "/usr/bin/omxplayer"
-        cmd = File.exists?(omx)?"#{omx} -o local -s":"mplayer" +
+        cmd = (File.exists?(omx)?"#{omx} -o local -s":"mplayer")+
             " \"#{ENV['HOME']}/Videos/"
         thr = stdin = nil
         keys.each do |name, code|
@@ -18,9 +18,9 @@ class VideoPlayer < HomeModule
         action :start, {:parameters => {:name => {:type => :string}}},
             Proc.new { |name, video|
             call :stop
-            p video
-            stdin, stdout, stderr, thr = Open3.popen3(
-               cmd + video + "\"")
+            command = cmd + video + "\""
+            p (command)
+            stdin, stdout, stderr, thr = Open3.popen3 command
             Thread.new { stdout.each_line {|line| puts line } }
         }
     end
