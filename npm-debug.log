@@ -1,0 +1,2002 @@
+info it worked if it ends with ok
+verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', '-g', 'install', 'socket.io' ]
+info using npm@1.1.4
+info using node@v0.6.19
+verbose config file /root/.npmrc
+verbose config file /usr/etc/npmrc
+verbose config file /usr/share/npm/npmrc
+silly exec /usr/bin/nodejs "/usr/share/npm/bin/npm-get-uid-gid.js" "nobody" 1000
+silly spawning [ '/usr/bin/nodejs',
+silly spawning   [ '/usr/share/npm/bin/npm-get-uid-gid.js', 'nobody', 1000 ],
+silly spawning   null ]
+silly output from getuid/gid {"uid":65534,"gid":1000}
+silly output from getuid/gid 
+verbose cache add [ 'socket.io', null ]
+silly cache add: name, spec, args [ undefined, 'socket.io', [ 'socket.io', null ] ]
+verbose parsed url { pathname: 'socket.io', path: 'socket.io', href: 'socket.io' }
+verbose addNamed [ 'socket.io', '' ]
+verbose addNamed [ null, '' ]
+silly name, range, hasData [ 'socket.io', '', false ]
+verbose raw, before any munging socket.io
+verbose url resolving [ 'https://registry.npmjs.org/', './socket.io' ]
+verbose url resolved https://registry.npmjs.org/socket.io
+http GET https://registry.npmjs.org/socket.io
+http 200 https://registry.npmjs.org/socket.io
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+silly get cb     etag: '"7JK1M9WJ2EMZYHDVO282BPRDT"',
+silly get cb     date: 'Tue, 16 Jul 2013 06:20:03 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '230219' } ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/socket.io'
+verbose mkdir done: /root/.npm/socket.io 755
+silly name, range, hasData 2 [ 'socket.io', '', true ]
+silly versions [ 'socket.io',
+silly versions   [ '0.3.8',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.5.1',
+silly versions     '0.5.3',
+silly versions     '0.6.0',
+silly versions     '0.6.1',
+silly versions     '0.6.3',
+silly versions     '0.6.4',
+silly versions     '0.6.5',
+silly versions     '0.6.6',
+silly versions     '0.6.7',
+silly versions     '0.6.8',
+silly versions     '0.6.9',
+silly versions     '0.6.10',
+silly versions     '0.6.11',
+silly versions     '0.6.12',
+silly versions     '0.6.14',
+silly versions     '0.6.15',
+silly versions     '0.6.16',
+silly versions     '0.6.17',
+silly versions     '0.6.18',
+silly versions     '0.7.0',
+silly versions     '0.7.1',
+silly versions     '0.7.2',
+silly versions     '0.7.3',
+silly versions     '0.7.4',
+silly versions     '0.7.5',
+silly versions     '0.7.6',
+silly versions     '0.7.7',
+silly versions     '0.7.8',
+silly versions     '0.7.9',
+silly versions     '0.7.10',
+silly versions     '0.7.11',
+silly versions     '0.8.0',
+silly versions     '0.8.1',
+silly versions     '0.8.2',
+silly versions     '0.8.3',
+silly versions     '0.8.4',
+silly versions     '0.8.5',
+silly versions     '0.8.6',
+silly versions     '0.8.7',
+silly versions     '0.9.0',
+silly versions     '0.9.1',
+silly versions     '0.9.1-1',
+silly versions     '0.9.2',
+silly versions     '0.9.3',
+silly versions     '0.9.4',
+silly versions     '0.9.5',
+silly versions     '0.9.6',
+silly versions     '0.9.7',
+silly versions     '0.9.8',
+silly versions     '0.9.9',
+silly versions     '0.9.10',
+silly versions     '0.9.11',
+silly versions     '0.9.12',
+silly versions     '0.9.13',
+silly versions     '0.9.14',
+silly versions     '0.9.15',
+silly versions     '0.9.16' ] ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-arm-3.6.11+',
+verbose bin dist   { shasum: '3bab0444e49b55fbbc157424dbd41aa375a51a76',
+verbose bin dist     tarball: 'http://registry.npmjs.org/socket.io/-/socket.io-0.9.16.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io/-/socket.io-0.9.16.tgz',
+verbose addRemoteTarball   '3bab0444e49b55fbbc157424dbd41aa375a51a76' ]
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106'
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955605107-0.05788351222872734'
+verbose mkdir done: /tmp/npm-1373955605106/1373955605107-0.05788351222872734 755
+verbose fetch to /tmp/npm-1373955605106/1373955605107-0.05788351222872734/tmp.tgz
+http GET https://registry.npmjs.org/socket.io/-/socket.io-0.9.16.tgz
+http 200 https://registry.npmjs.org/socket.io/-/socket.io-0.9.16.tgz
+silly updated sha bytes 35009
+info shasum 3bab0444e49b55fbbc157424dbd41aa375a51a76
+info shasum /tmp/npm-1373955605106/1373955605107-0.05788351222872734/tmp.tgz
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm'
+verbose mkdir done: /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/.travis.yml
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/package.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/.npmignore
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/History.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/Makefile
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/LICENSE
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/Readme.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/benchmarks
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/benchmarks/encode.bench.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/benchmarks/runner.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/benchmarks/decode.bench.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/socket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/static.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transport.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/manager.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/parser.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/namespace.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/util.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/socket.io.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/store.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/logger.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/stores
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/stores/redis.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/stores/memory.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/http-polling.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/http.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/websocket
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/websocket/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/websocket/default.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/websocket/hybi-16.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package/lib/transports/websocket/hybi-07-12.js
+verbose gunzed /tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package
+verbose rm'ed /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package
+verbose renamed [ '/tmp/npm-1373955605106/1373955605107-0.05788351222872734/___package.npm/package',
+verbose renamed   '/tmp/npm-1373955605106/1373955605107-0.05788351222872734/package' ]
+verbose caching /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package/package.json
+verbose loadDefaults socket.io@0.9.16
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package/package.json
+verbose pack /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package
+verbose pack /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package /root/.npm/socket.io/0.9.16/package.tgz
+silly makeList /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package
+silly dir, dirLen [ '/tmp/npm-1373955605106/1373955605107-0.05788351222872734/package',
+silly dir, dirLen   65 ]
+verbose tarball /root/.npm/socket.io/0.9.16/package.tgz
+verbose parent /tmp/npm-1373955605106/1373955605107-0.05788351222872734/package
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/socket.io/0.9.16/___package.npm'
+verbose mkdir done: /root/.npm/socket.io/0.9.16/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /root/.npm/socket.io/0.9.16/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/index.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/.travis.yml
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/package.json
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/.npmignore
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/History.md
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/Makefile
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/LICENSE
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/Readme.md
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/benchmarks
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/benchmarks/encode.bench.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/benchmarks/runner.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/benchmarks/decode.bench.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/socket.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/static.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transport.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/manager.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/parser.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/namespace.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/util.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/socket.io.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/store.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/logger.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/stores
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/stores/redis.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/stores/memory.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/index.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/http-polling.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/http.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/websocket
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/websocket/index.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/websocket/default.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/websocket/hybi-16.js
+silly asyncMap in gTP /root/.npm/socket.io/0.9.16/___package.npm/package/lib/transports/websocket/hybi-07-12.js
+verbose gunzed /root/.npm/socket.io/0.9.16/___package.npm/package
+verbose rm'ed /root/.npm/socket.io/0.9.16/package
+verbose renamed [ '/root/.npm/socket.io/0.9.16/___package.npm/package',
+verbose renamed   '/root/.npm/socket.io/0.9.16/package' ]
+verbose caching /root/.npm/socket.io/0.9.16/package/package.json
+verbose loadDefaults socket.io@0.9.16
+silly updated sha bytes 34971
+info shasum 97973070ab03dde685818621d95f16a5f12c6642
+info shasum /root/.npm/socket.io/0.9.16/package.tgz
+verbose from cache /root/.npm/socket.io/0.9.16/package/package.json
+verbose chmod /root/.npm/socket.io/0.9.16/package.tgz 644
+verbose chown [ '/root/.npm/socket.io/0.9.16/package.tgz', 0, 0 ]
+silly resolved [ { name: 'socket.io',
+silly resolved     version: '0.9.16',
+silly resolved     description: 'Real-time apps made cross-browser & easy with a WebSocket-like API',
+silly resolved     homepage: 'http://socket.io',
+silly resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' },
+silly resolved        { name: 'Arnout Kazemier', email: 'info@3rd-eden.com' },
+silly resolved        { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Einar Otto Stangvik', email: 'einaros@gmail.com' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/LearnBoost/socket.io.git' },
+silly resolved     dependencies: 
+silly resolved      { 'socket.io-client': '0.9.16',
+silly resolved        policyfile: '0.0.4',
+silly resolved        base64id: '0.1.0',
+silly resolved        redis: '0.7.3' },
+silly resolved     devDependencies: 
+silly resolved      { expresso: '0.9.2',
+silly resolved        should: '*',
+silly resolved        benchmark: '0.2.2',
+silly resolved        microtime: '0.1.3-1',
+silly resolved        colors: '0.5.1' },
+silly resolved     optionalDependencies: { redis: '0.7.3' },
+silly resolved     main: 'index',
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     scripts: { test: 'make test' },
+silly resolved     _id: 'socket.io@0.9.16',
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '97973070ab03dde685818621d95f16a5f12c6642' },
+silly resolved     _from: 'socket.io' } ]
+info into /usr/local/lib socket.io@0.9.16
+info installOne socket.io@0.9.16
+verbose from cache /root/.npm/socket.io/0.9.16/package/package.json
+info unbuild /usr/local/lib/node_modules/socket.io
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/___socket.io.npm'
+verbose mkdir done: /usr/local/lib/node_modules/___socket.io.npm 755
+verbose unpack_ uid, gid [ 65534, 1000 ]
+verbose unpackTarget /usr/local/lib/node_modules/socket.io
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/.travis.yml
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/History.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/Makefile
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/LICENSE
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/Readme.md
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/benchmarks
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/benchmarks/encode.bench.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/benchmarks/runner.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/benchmarks/decode.bench.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/socket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/static.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transport.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/manager.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/parser.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/namespace.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/util.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/socket.io.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/store.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/logger.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/stores
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/stores/redis.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/stores/memory.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/http-polling.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/http.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/websocket
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/websocket/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/websocket/default.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/websocket/hybi-16.js
+silly asyncMap in gTP /usr/local/lib/node_modules/___socket.io.npm/package/lib/transports/websocket/hybi-07-12.js
+verbose gunzed /usr/local/lib/node_modules/___socket.io.npm/package
+verbose rm'ed /usr/local/lib/node_modules/socket.io
+verbose renamed [ '/usr/local/lib/node_modules/___socket.io.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/socket.io' ]
+verbose caching /usr/local/lib/node_modules/socket.io/package.json
+verbose loadDefaults socket.io@0.9.16
+info preinstall socket.io@0.9.16
+verbose from cache /usr/local/lib/node_modules/socket.io/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /usr/local/lib/node_modules/socket.io/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'socket.io-client@0.9.16', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'socket.io-client@0.9.16',
+silly cache add: name, spec, args   [ 'socket.io-client@0.9.16', null ] ]
+verbose parsed url { pathname: 'socket.io-client@0.9.16',
+verbose parsed url   path: 'socket.io-client@0.9.16',
+verbose parsed url   href: 'socket.io-client@0.9.16' }
+silly cache add: name, spec, args [ 'socket.io-client',
+silly cache add: name, spec, args   '0.9.16',
+silly cache add: name, spec, args   [ 'socket.io-client', '0.9.16' ] ]
+verbose parsed url { pathname: '0.9.16', path: '0.9.16', href: '0.9.16' }
+verbose addNamed [ 'socket.io-client', '0.9.16' ]
+verbose addNamed [ '0.9.16', '0.9.16' ]
+verbose cache add [ 'policyfile@0.0.4', null ]
+silly cache add: name, spec, args [ undefined, 'policyfile@0.0.4', [ 'policyfile@0.0.4', null ] ]
+verbose parsed url { pathname: 'policyfile@0.0.4',
+verbose parsed url   path: 'policyfile@0.0.4',
+verbose parsed url   href: 'policyfile@0.0.4' }
+silly cache add: name, spec, args [ 'policyfile', '0.0.4', [ 'policyfile', '0.0.4' ] ]
+verbose parsed url { pathname: '0.0.4', path: '0.0.4', href: '0.0.4' }
+verbose addNamed [ 'policyfile', '0.0.4' ]
+verbose addNamed [ '0.0.4', '0.0.4' ]
+verbose cache add [ 'base64id@0.1.0', null ]
+silly cache add: name, spec, args [ undefined, 'base64id@0.1.0', [ 'base64id@0.1.0', null ] ]
+verbose parsed url { pathname: 'base64id@0.1.0',
+verbose parsed url   path: 'base64id@0.1.0',
+verbose parsed url   href: 'base64id@0.1.0' }
+silly cache add: name, spec, args [ 'base64id', '0.1.0', [ 'base64id', '0.1.0' ] ]
+verbose parsed url { pathname: '0.1.0', path: '0.1.0', href: '0.1.0' }
+verbose addNamed [ 'base64id', '0.1.0' ]
+verbose addNamed [ '0.1.0', '0.1.0' ]
+verbose cache add [ 'redis@0.7.3', null ]
+silly cache add: name, spec, args [ undefined, 'redis@0.7.3', [ 'redis@0.7.3', null ] ]
+verbose parsed url { pathname: 'redis@0.7.3',
+verbose parsed url   path: 'redis@0.7.3',
+verbose parsed url   href: 'redis@0.7.3' }
+silly cache add: name, spec, args [ 'redis', '0.7.3', [ 'redis', '0.7.3' ] ]
+verbose parsed url { pathname: '0.7.3', path: '0.7.3', href: '0.7.3' }
+verbose addNamed [ 'redis', '0.7.3' ]
+verbose addNamed [ '0.7.3', '0.7.3' ]
+verbose raw, before any munging socket.io-client/0.9.16
+verbose url resolving [ 'https://registry.npmjs.org/', './socket.io-client/0.9.16' ]
+verbose url resolved https://registry.npmjs.org/socket.io-client/0.9.16
+http GET https://registry.npmjs.org/socket.io-client/0.9.16
+verbose raw, before any munging policyfile/0.0.4
+verbose url resolving [ 'https://registry.npmjs.org/', './policyfile/0.0.4' ]
+verbose url resolved https://registry.npmjs.org/policyfile/0.0.4
+http GET https://registry.npmjs.org/policyfile/0.0.4
+verbose raw, before any munging base64id/0.1.0
+verbose url resolving [ 'https://registry.npmjs.org/', './base64id/0.1.0' ]
+verbose url resolved https://registry.npmjs.org/base64id/0.1.0
+http GET https://registry.npmjs.org/base64id/0.1.0
+verbose raw, before any munging redis/0.7.3
+verbose url resolving [ 'https://registry.npmjs.org/', './redis/0.7.3' ]
+verbose url resolved https://registry.npmjs.org/redis/0.7.3
+http GET https://registry.npmjs.org/redis/0.7.3
+http 200 https://registry.npmjs.org/policyfile/0.0.4
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+silly get cb     etag: '"EQQXYDZ0BJGG3E5IVIRAEV9J"',
+silly get cb     date: 'Tue, 16 Jul 2013 06:20:13 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '1010' } ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/policyfile'
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/policyfile/0.0.4'
+verbose mkdir done: /root/.npm/policyfile/0.0.4 755
+http 200 https://registry.npmjs.org/base64id/0.1.0
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+silly get cb     etag: '"CTLQBM2XI54YVEFGWA4X7AK4Y"',
+silly get cb     date: 'Tue, 16 Jul 2013 06:20:13 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '780' } ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/base64id'
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-arm-3.6.11+',
+verbose bin dist   { shasum: 'd6b82ead98ae79ebe228e2daf5903311ec982e4d',
+verbose bin dist     tarball: 'http://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz',
+verbose addRemoteTarball   'd6b82ead98ae79ebe228e2daf5903311ec982e4d' ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/base64id/0.1.0'
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614073-0.06229148688726127'
+verbose mkdir done: /root/.npm/base64id/0.1.0 755
+verbose mkdir done: /tmp/npm-1373955605106/1373955614073-0.06229148688726127 755
+verbose fetch to /tmp/npm-1373955605106/1373955614073-0.06229148688726127/tmp.tgz
+http GET https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-arm-3.6.11+',
+verbose bin dist   { shasum: '02ce0fdeee0cef4f40080e1e73e834f0b1bfce3f',
+verbose bin dist     tarball: 'http://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz',
+verbose addRemoteTarball   '02ce0fdeee0cef4f40080e1e73e834f0b1bfce3f' ]
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614106-0.3526853886432946'
+verbose mkdir done: /tmp/npm-1373955605106/1373955614106-0.3526853886432946 755
+verbose fetch to /tmp/npm-1373955605106/1373955614106-0.3526853886432946/tmp.tgz
+http GET https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz
+http 200 https://registry.npmjs.org/redis/0.7.3
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+silly get cb     etag: '"39H3RDJY1DN8ARAVYSKLGUKGD"',
+silly get cb     date: 'Tue, 16 Jul 2013 06:20:14 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '27944' } ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/redis'
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/redis/0.7.3'
+verbose mkdir done: /root/.npm/redis/0.7.3 755
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-arm-3.6.11+',
+verbose bin dist   { shasum: 'ee57b7a44d25ec1594e44365d8165fa7d1d4811a',
+verbose bin dist     tarball: 'http://registry.npmjs.org/redis/-/redis-0.7.3.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/redis/-/redis-0.7.3.tgz',
+verbose addRemoteTarball   'ee57b7a44d25ec1594e44365d8165fa7d1d4811a' ]
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614297-0.22309074504300952'
+verbose mkdir done: /tmp/npm-1373955605106/1373955614297-0.22309074504300952 755
+verbose fetch to /tmp/npm-1373955605106/1373955614297-0.22309074504300952/tmp.tgz
+http GET https://registry.npmjs.org/redis/-/redis-0.7.3.tgz
+http 200 https://registry.npmjs.org/socket.io-client/0.9.16
+silly get cb [ 200,
+silly get cb   { vary: 'Accept',
+silly get cb     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+silly get cb     etag: '"48K4DPDE5851FDNEJQ3WETQ07"',
+silly get cb     date: 'Tue, 16 Jul 2013 06:20:14 GMT',
+silly get cb     'content-type': 'application/json',
+silly get cb     'content-length': '7780' } ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/socket.io-client'
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/socket.io-client/0.9.16'
+verbose mkdir done: /root/.npm/socket.io-client/0.9.16 755
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-arm-3.6.11+',
+verbose bin dist   { shasum: '4da7515c5e773041d1b423970415bcc430f35fc6',
+verbose bin dist     tarball: 'http://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz' } ]
+verbose addRemoteTarball [ 'https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz',
+verbose addRemoteTarball   '4da7515c5e773041d1b423970415bcc430f35fc6' ]
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614474-0.9454206796362996'
+verbose mkdir done: /tmp/npm-1373955605106/1373955614474-0.9454206796362996 755
+verbose fetch to /tmp/npm-1373955605106/1373955614474-0.9454206796362996/tmp.tgz
+http GET https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz
+http 200 https://registry.npmjs.org/policyfile/-/policyfile-0.0.4.tgz
+silly updated sha bytes 11900
+info shasum d6b82ead98ae79ebe228e2daf5903311ec982e4d
+info shasum /tmp/npm-1373955605106/1373955614073-0.06229148688726127/tmp.tgz
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm'
+verbose mkdir done: /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package
+silly gunzTarPerm modes [ '755', '644' ]
+http 200 https://registry.npmjs.org/base64id/-/base64id-0.1.0.tgz
+http 200 https://registry.npmjs.org/redis/-/redis-0.7.3.tgz
+silly updated sha bytes 1436
+info shasum 02ce0fdeee0cef4f40080e1e73e834f0b1bfce3f
+info shasum /tmp/npm-1373955605106/1373955614106-0.3526853886432946/tmp.tgz
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm'
+verbose mkdir done: /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm 755
+silly updated sha bytes 40960
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly updated sha bytes 10751
+info shasum ee57b7a44d25ec1594e44365d8165fa7d1d4811a
+info shasum /tmp/npm-1373955605106/1373955614297-0.22309074504300952/tmp.tgz
+http 200 https://registry.npmjs.org/socket.io-client/-/socket.io-client-0.9.16.tgz
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm'
+verbose mkdir done: /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package/package.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package/README.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package/.npmignore
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package/lib
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package/lib/base64id.js
+verbose gunzed /tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package
+verbose rm'ed /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package
+verbose renamed [ '/tmp/npm-1373955605106/1373955614106-0.3526853886432946/___package.npm/package',
+verbose renamed   '/tmp/npm-1373955605106/1373955614106-0.3526853886432946/package' ]
+verbose caching /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package/package.json
+verbose loadDefaults base64id@0.1.0
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package/package.json
+verbose pack /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package
+verbose pack /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package /root/.npm/base64id/0.1.0/package.tgz
+silly makeList /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package
+silly dir, dirLen [ '/tmp/npm-1373955605106/1373955614106-0.3526853886432946/package',
+silly dir, dirLen   64 ]
+verbose tarball /root/.npm/base64id/0.1.0/package.tgz
+verbose parent /tmp/npm-1373955605106/1373955614106-0.3526853886432946/package
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 36864
+silly updated sha bytes 36864
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 36864
+silly updated sha bytes 36864
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 36864
+silly updated sha bytes 36864
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 16555
+info shasum 4da7515c5e773041d1b423970415bcc430f35fc6
+info shasum /tmp/npm-1373955605106/1373955614474-0.9454206796362996/tmp.tgz
+verbose mkdir (expected) error ENOENT, stat '/tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm'
+verbose mkdir done: /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package
+silly gunzTarPerm modes [ '755', '644' ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/base64id/0.1.0/___package.npm'
+verbose mkdir done: /root/.npm/base64id/0.1.0/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /root/.npm/base64id/0.1.0/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/.gitignore
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/package.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/README.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/Makefile
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/LICENSE
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/lib
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/lib/server.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/doc
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/doc/index.html
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/examples
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/examples/basic.fallback.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/examples/basic.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/tests
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/tests/unit.test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/tests/ssl
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/tests/ssl/ssl.private.key
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package/tests/ssl/ssl.crt
+verbose gunzed /tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package
+verbose rm'ed /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package
+verbose renamed [ '/tmp/npm-1373955605106/1373955614073-0.06229148688726127/___package.npm/package',
+verbose renamed   '/tmp/npm-1373955605106/1373955614073-0.06229148688726127/package' ]
+verbose caching /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package/package.json
+verbose loadDefaults policyfile@0.0.4
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package/package.json
+verbose pack /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package
+verbose pack /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package /root/.npm/policyfile/0.0.4/package.tgz
+silly makeList /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package
+silly dir, dirLen [ '/tmp/npm-1373955605106/1373955614073-0.06229148688726127/package',
+silly dir, dirLen   65 ]
+verbose tarball /root/.npm/policyfile/0.0.4/package.tgz
+verbose parent /tmp/npm-1373955605106/1373955614073-0.06229148688726127/package
+silly afterUntar ok
+silly asyncMap in gTP /root/.npm/base64id/0.1.0/___package.npm/package
+silly asyncMap in gTP /root/.npm/base64id/0.1.0/___package.npm/package/package.json
+silly asyncMap in gTP /root/.npm/base64id/0.1.0/___package.npm/package/README.md
+silly asyncMap in gTP /root/.npm/base64id/0.1.0/___package.npm/package/.npmignore
+silly asyncMap in gTP /root/.npm/base64id/0.1.0/___package.npm/package/lib
+silly asyncMap in gTP /root/.npm/base64id/0.1.0/___package.npm/package/lib/base64id.js
+verbose gunzed /root/.npm/base64id/0.1.0/___package.npm/package
+verbose rm'ed /root/.npm/base64id/0.1.0/package
+verbose renamed [ '/root/.npm/base64id/0.1.0/___package.npm/package',
+verbose renamed   '/root/.npm/base64id/0.1.0/package' ]
+verbose caching /root/.npm/base64id/0.1.0/package/package.json
+verbose loadDefaults base64id@0.1.0
+silly updated sha bytes 1467
+info shasum d03dcdbe8d4a25d270f96e372792347d58c7957b
+info shasum /root/.npm/base64id/0.1.0/package.tgz
+verbose from cache /root/.npm/base64id/0.1.0/package/package.json
+verbose chmod /root/.npm/base64id/0.1.0/package.tgz 644
+verbose chown [ '/root/.npm/base64id/0.1.0/package.tgz', 0, 0 ]
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/policyfile/0.0.4/___package.npm'
+verbose mkdir done: /root/.npm/policyfile/0.0.4/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /root/.npm/policyfile/0.0.4/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/index.js
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/package.json
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/README.md
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/.npmignore
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/Makefile
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/LICENSE
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/lib
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/lib/server.js
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/doc
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/doc/index.html
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/examples
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/examples/basic.fallback.js
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/examples/basic.js
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/tests
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/tests/unit.test.js
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/tests/ssl
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/tests/ssl/ssl.private.key
+silly asyncMap in gTP /root/.npm/policyfile/0.0.4/___package.npm/package/tests/ssl/ssl.crt
+verbose gunzed /root/.npm/policyfile/0.0.4/___package.npm/package
+verbose rm'ed /root/.npm/policyfile/0.0.4/package
+verbose renamed [ '/root/.npm/policyfile/0.0.4/___package.npm/package',
+verbose renamed   '/root/.npm/policyfile/0.0.4/package' ]
+verbose caching /root/.npm/policyfile/0.0.4/package/package.json
+verbose loadDefaults policyfile@0.0.4
+silly updated sha bytes 12162
+info shasum 972a7bda54fb412eef3265f482ebc6c3bcdb1491
+info shasum /root/.npm/policyfile/0.0.4/package.tgz
+verbose from cache /root/.npm/policyfile/0.0.4/package/package.json
+verbose chmod /root/.npm/policyfile/0.0.4/package.tgz 644
+verbose chown [ '/root/.npm/policyfile/0.0.4/package.tgz', 0, 0 ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/mem.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/generate_commands.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/package.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/README.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/diff_multi_bench_output.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/.npmignore
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/changelog.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/multi_bench.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/auth.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/file.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/multi2.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/unix_socket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/mget.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/monitor.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/backpressure_drain.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/extend.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/subqueries.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/multi.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/pub_sub.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/subquery.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/web_server.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/eval.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/simple.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/sort.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/examples/psubscribe.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib/commands.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib/queue.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib/util.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib/to_array.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib/parser
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib/parser/javascript.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/lib/parser/hiredis.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/hiredis_parser.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/sub_quit_test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/reconnect_test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/buffer_bench.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/re_sub_test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/codec.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/pubsub
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/pubsub/run
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/pubsub/server.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/pubsub/pub.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/speed
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/speed/plot
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/speed/speed.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/speed/00
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/speed/size-rate.png
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/rpushblpop
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/rpushblpop/run
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/rpushblpop/server.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package/benches/stress/rpushblpop/pub.js
+verbose gunzed /tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package
+verbose rm'ed /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package
+verbose renamed [ '/tmp/npm-1373955605106/1373955614297-0.22309074504300952/___package.npm/package',
+verbose renamed   '/tmp/npm-1373955605106/1373955614297-0.22309074504300952/package' ]
+verbose caching /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package/package.json
+verbose loadDefaults redis@0.7.3
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package/package.json
+verbose pack /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package
+verbose pack /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package /root/.npm/redis/0.7.3/package.tgz
+silly makeList /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package
+silly dir, dirLen [ '/tmp/npm-1373955605106/1373955614297-0.22309074504300952/package',
+silly dir, dirLen   65 ]
+verbose tarball /root/.npm/redis/0.7.3/package.tgz
+verbose parent /tmp/npm-1373955605106/1373955614297-0.22309074504300952/package
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/redis/0.7.3/___package.npm'
+verbose mkdir done: /root/.npm/redis/0.7.3/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /root/.npm/redis/0.7.3/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/index.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/mem.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/generate_commands.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/package.json
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/README.md
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/diff_multi_bench_output.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/test.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/.npmignore
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/changelog.md
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/multi_bench.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/auth.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/file.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/multi2.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/unix_socket.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/mget.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/monitor.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/backpressure_drain.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/extend.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/subqueries.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/multi.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/pub_sub.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/subquery.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/web_server.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/eval.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/simple.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/sort.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/examples/psubscribe.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib/commands.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib/queue.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib/util.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib/to_array.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib/parser
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib/parser/javascript.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/lib/parser/hiredis.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/hiredis_parser.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/sub_quit_test.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/reconnect_test.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/buffer_bench.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/re_sub_test.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/codec.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/pubsub
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/pubsub/run
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/pubsub/server.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/pubsub/pub.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/speed
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/speed/plot
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/speed/speed.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/speed/00
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/speed/size-rate.png
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/rpushblpop
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/rpushblpop/run
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/rpushblpop/server.js
+silly asyncMap in gTP /root/.npm/redis/0.7.3/___package.npm/package/benches/stress/rpushblpop/pub.js
+verbose gunzed /root/.npm/redis/0.7.3/___package.npm/package
+verbose rm'ed /root/.npm/redis/0.7.3/package
+verbose renamed [ '/root/.npm/redis/0.7.3/___package.npm/package',
+verbose renamed   '/root/.npm/redis/0.7.3/package' ]
+verbose caching /root/.npm/redis/0.7.3/package/package.json
+verbose loadDefaults redis@0.7.3
+silly updated sha bytes 40960
+silly updated sha bytes 10916
+info shasum a8d449d00ea30ff7ff24de6b784982d93518ca6f
+info shasum /root/.npm/redis/0.7.3/package.tgz
+verbose from cache /root/.npm/redis/0.7.3/package/package.json
+verbose chmod /root/.npm/redis/0.7.3/package.tgz 644
+verbose chown [ '/root/.npm/redis/0.7.3/package.tgz', 0, 0 ]
+silly afterUntar ok
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/package.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/README.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/.npmignore
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/History.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/Makefile
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/bin
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/bin/builder.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/dist
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/dist/WebSocketMain.swf
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/dist/socket.io.min.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/dist/WebSocketMainInsecure.swf
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/dist/socket.io.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/socket.test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/parser.test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/worker.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/events.test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/io.test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/util.test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/node
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/node/builder.common.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/test/node/builder.test.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-emitter
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-emitter/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-emitter/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-socket.io-protocol
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-socket.io-protocol/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-socket.io-protocol/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/visionmedia-debug
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/visionmedia-debug/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/visionmedia-debug/debug.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/visionmedia-debug/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/timoxley-to-array
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/timoxley-to-array/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/timoxley-to-array/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-json-fallback
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-json-fallback/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-json-fallback/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-json/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-json/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-bind
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-bind/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/component-bind/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/component.json
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/socket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transport.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/parser.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/emitter.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/util.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transports
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transports/polling-jsonp.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transports/index.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transports/flashsocket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transports/polling-xhr.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transports/polling.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/components/learnboost-engine.io-client/lib/transports/websocket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/socket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transport.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/json.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/parser.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/events.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/io.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/namespace.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/util.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transports
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transports/xhr.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/WebSocketMainInsecure.zip
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/WebSocketMain.swf
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/web_socket.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/README.md
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/.npmignore
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/swfobject.js
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/sample.html
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocket.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMain.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/build.sh
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as
+silly asyncMap in gTP /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as
+verbose gunzed /tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package
+verbose rm'ed /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package
+verbose renamed [ '/tmp/npm-1373955605106/1373955614474-0.9454206796362996/___package.npm/package',
+verbose renamed   '/tmp/npm-1373955605106/1373955614474-0.9454206796362996/package' ]
+verbose caching /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package/package.json
+verbose loadDefaults socket.io-client@0.9.16
+verbose tarball contents [ 'package', 'tmp.tgz' ]
+verbose from cache /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package/package.json
+verbose pack /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package
+verbose pack /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package /root/.npm/socket.io-client/0.9.16/package.tgz
+silly makeList /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package
+silly dir, dirLen [ '/tmp/npm-1373955605106/1373955614474-0.9454206796362996/package',
+silly dir, dirLen   64 ]
+verbose tarball /root/.npm/socket.io-client/0.9.16/package.tgz
+verbose parent /tmp/npm-1373955605106/1373955614474-0.9454206796362996/package
+verbose mkdir (expected) error ENOENT, stat '/root/.npm/socket.io-client/0.9.16/___package.npm'
+verbose mkdir done: /root/.npm/socket.io-client/0.9.16/___package.npm 755
+verbose unpack_ uid, gid [ 0, 0 ]
+verbose unpackTarget /root/.npm/socket.io-client/0.9.16/package
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/package.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/README.md
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/.npmignore
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/History.md
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/Makefile
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/bin
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/bin/builder.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/dist
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/dist/WebSocketMain.swf
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/dist/socket.io.min.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/dist/WebSocketMainInsecure.swf
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/dist/socket.io.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/socket.test.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/parser.test.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/worker.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/events.test.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/io.test.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/util.test.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/node
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/node/builder.common.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/test/node/builder.test.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-emitter
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-emitter/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-emitter/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-socket.io-protocol
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-socket.io-protocol/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-socket.io-protocol/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/visionmedia-debug
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/visionmedia-debug/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/visionmedia-debug/debug.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/visionmedia-debug/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/timoxley-to-array
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/timoxley-to-array/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/timoxley-to-array/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-json-fallback
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-json-fallback/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-json-fallback/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-json/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-json/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-bind
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-bind/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/component-bind/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/component.json
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/socket.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transport.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/parser.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/emitter.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/util.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transports
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transports/polling-jsonp.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transports/index.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transports/flashsocket.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transports/polling-xhr.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transports/polling.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/components/learnboost-engine.io-client/lib/transports/websocket.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/socket.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transport.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/json.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/parser.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/events.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/io.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/namespace.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/util.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transports
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transports/xhr.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/WebSocketMainInsecure.zip
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/WebSocketMain.swf
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/web_socket.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/README.md
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/.npmignore
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/swfobject.js
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/sample.html
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocket.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMain.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/build.sh
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as
+silly asyncMap in gTP /root/.npm/socket.io-client/0.9.16/___package.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as
+verbose gunzed /root/.npm/socket.io-client/0.9.16/___package.npm/package
+verbose rm'ed /root/.npm/socket.io-client/0.9.16/package
+verbose renamed [ '/root/.npm/socket.io-client/0.9.16/___package.npm/package',
+verbose renamed   '/root/.npm/socket.io-client/0.9.16/package' ]
+verbose caching /root/.npm/socket.io-client/0.9.16/package/package.json
+verbose loadDefaults socket.io-client@0.9.16
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 40960
+silly updated sha bytes 36023
+info shasum 80c2bb18408665d33d02f1ae9c6e7c318e5d02a6
+info shasum /root/.npm/socket.io-client/0.9.16/package.tgz
+verbose from cache /root/.npm/socket.io-client/0.9.16/package/package.json
+verbose chmod /root/.npm/socket.io-client/0.9.16/package.tgz 644
+verbose chown [ '/root/.npm/socket.io-client/0.9.16/package.tgz', 0, 0 ]
+silly resolved [ { name: 'base64id',
+silly resolved     version: '0.1.0',
+silly resolved     description: 'Generates a base64 id',
+silly resolved     author: 
+silly resolved      { name: 'Kristian Faeldt',
+silly resolved        email: 'faeldt_kristian@cyberagent.co.jp' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/faeldt/base64id.git' },
+silly resolved     main: './lib/base64id.js',
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     _id: 'base64id@0.1.0',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: 'd03dcdbe8d4a25d270f96e372792347d58c7957b' },
+silly resolved     _from: 'base64id@0.1.0',
+silly resolved     scripts: {} },
+silly resolved   { name: 'policyfile',
+silly resolved     version: '0.0.4',
+silly resolved     author: { name: 'Arnout Kazemier' },
+silly resolved     description: 'Flash Socket Policy File Server. A server to respond to Flash Socket Policy requests, both inline and through a dedicated server instance.',
+silly resolved     main: 'index',
+silly resolved     keywords: 
+silly resolved      [ 'flash',
+silly resolved        'socket',
+silly resolved        'policy',
+silly resolved        'file',
+silly resolved        'server',
+silly resolved        'Flash Socket Policy File Server',
+silly resolved        'cross domain' ],
+silly resolved     directories: { lib: './lib' },
+silly resolved     maintainers: 
+silly resolved      [ { name: 'Arnout Kazemier',
+silly resolved          email: 'info@3rd-Eden.com',
+silly resolved          url: 'http://blog.3rd-Eden.com' } ],
+silly resolved     licenses: 
+silly resolved      [ { type: 'MIT',
+silly resolved          url: 'https://github.com/3rd-Eden/FlashPolicyFileServer/blob/master/LICENSE' } ],
+silly resolved     repositories: 
+silly resolved      [ { type: 'git',
+silly resolved          url: 'https://github.com/3rd-Eden/FlashPolicyFileServer.git' } ],
+silly resolved     _id: 'policyfile@0.0.4',
+silly resolved     dependencies: {},
+silly resolved     devDependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '972a7bda54fb412eef3265f482ebc6c3bcdb1491' },
+silly resolved     _from: 'policyfile@0.0.4',
+silly resolved     scripts: {} },
+silly resolved   { name: 'redis',
+silly resolved     version: '0.7.3',
+silly resolved     description: 'Redis client library',
+silly resolved     author: { name: 'Matt Ranney', email: 'mjr@ranney.com' },
+silly resolved     maintainers: 
+silly resolved      [ { name: 'David Trejo',
+silly resolved          email: 'david.daniel.trejo@gmail.com',
+silly resolved          url: 'http://dtrejo.com/' } ],
+silly resolved     main: './index.js',
+silly resolved     scripts: { test: 'node ./test.js' },
+silly resolved     devDependencies: { metrics: '>=0.1.5' },
+silly resolved     repository: { type: 'git', url: 'git://github.com/mranney/node_redis.git' },
+silly resolved     _id: 'redis@0.7.3',
+silly resolved     dependencies: {},
+silly resolved     optionalDependencies: {},
+silly resolved     engines: { node: '*' },
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: 'a8d449d00ea30ff7ff24de6b784982d93518ca6f' },
+silly resolved     _from: 'redis@0.7.3' },
+silly resolved   { name: 'socket.io-client',
+silly resolved     description: 'Socket.IO client for the browser and node.js',
+silly resolved     version: '0.9.16',
+silly resolved     main: './lib/io.js',
+silly resolved     browserify: './dist/socket.io.js',
+silly resolved     homepage: 'http://socket.io',
+silly resolved     keywords: [ 'websocket', 'socket', 'realtime', 'socket.io', 'comet', 'ajax' ],
+silly resolved     author: { name: 'Guillermo Rauch', email: 'guillermo@learnboost.com' },
+silly resolved     contributors: 
+silly resolved      [ { name: 'Guillermo Rauch', email: 'rauchg@gmail.com' },
+silly resolved        { name: 'Arnout Kazemier', email: 'info@3rd-eden.com' },
+silly resolved        { name: 'Vladimir Dronnikov', email: 'dronnikov@gmail.com' },
+silly resolved        { name: 'Einar Otto Stangvik', email: 'einaros@gmail.com' } ],
+silly resolved     repository: 
+silly resolved      { type: 'git',
+silly resolved        url: 'git://github.com/LearnBoost/socket.io-client.git' },
+silly resolved     dependencies: 
+silly resolved      { 'uglify-js': '1.2.5',
+silly resolved        ws: '0.4.x',
+silly resolved        xmlhttprequest: '1.4.2',
+silly resolved        'active-x-obfuscator': '0.0.1' },
+silly resolved     devDependencies: 
+silly resolved      { expresso: '*',
+silly resolved        express: '2.5.x',
+silly resolved        jade: '*',
+silly resolved        stylus: '*',
+silly resolved        'socket.io': '0.9.16',
+silly resolved        'socket.io-client': '0.9.16',
+silly resolved        should: '*' },
+silly resolved     engines: { node: '>= 0.4.0' },
+silly resolved     _id: 'socket.io-client@0.9.16',
+silly resolved     optionalDependencies: {},
+silly resolved     _engineSupported: true,
+silly resolved     _npmVersion: '1.1.4',
+silly resolved     _nodeVersion: 'v0.6.19',
+silly resolved     _defaultsLoaded: true,
+silly resolved     dist: { shasum: '80c2bb18408665d33d02f1ae9c6e7c318e5d02a6' },
+silly resolved     _from: 'socket.io-client@0.9.16',
+silly resolved     scripts: {} } ]
+info into /usr/local/lib/node_modules/socket.io base64id@0.1.0
+info into /usr/local/lib/node_modules/socket.io policyfile@0.0.4
+info into /usr/local/lib/node_modules/socket.io redis@0.7.3
+info into /usr/local/lib/node_modules/socket.io socket.io-client@0.9.16
+info installOne base64id@0.1.0
+info installOne policyfile@0.0.4
+info installOne redis@0.7.3
+info installOne socket.io-client@0.9.16
+verbose from cache /root/.npm/base64id/0.1.0/package/package.json
+info unbuild /usr/local/lib/node_modules/socket.io/node_modules/base64id
+verbose from cache /root/.npm/policyfile/0.0.4/package/package.json
+info unbuild /usr/local/lib/node_modules/socket.io/node_modules/policyfile
+verbose from cache /root/.npm/redis/0.7.3/package/package.json
+info unbuild /usr/local/lib/node_modules/socket.io/node_modules/redis
+verbose from cache /root/.npm/socket.io-client/0.9.16/package/package.json
+info unbuild /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules'
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm'
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm'
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules/___redis.npm'
+verbose mkdir (expected) error ENOENT, stat '/usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm'
+verbose mkdir done: /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm 755
+verbose mkdir done: /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm 755
+verbose mkdir done: /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm 755
+verbose mkdir done: /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm 755
+verbose unpack_ uid, gid [ 65534, 1000 ]
+verbose unpackTarget /usr/local/lib/node_modules/socket.io/node_modules/base64id
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 65534, 1000 ]
+verbose unpackTarget /usr/local/lib/node_modules/socket.io/node_modules/policyfile
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 65534, 1000 ]
+verbose unpackTarget /usr/local/lib/node_modules/socket.io/node_modules/redis
+silly gunzTarPerm modes [ '755', '644' ]
+verbose unpack_ uid, gid [ 65534, 1000 ]
+verbose unpackTarget /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client
+silly gunzTarPerm modes [ '755', '644' ]
+silly afterUntar ok
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package/lib
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package/lib/base64id.js
+verbose gunzed /usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package
+verbose rm'ed /usr/local/lib/node_modules/socket.io/node_modules/base64id
+verbose renamed [ '/usr/local/lib/node_modules/socket.io/node_modules/___base64id.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/socket.io/node_modules/base64id' ]
+verbose caching /usr/local/lib/node_modules/socket.io/node_modules/base64id/package.json
+verbose loadDefaults base64id@0.1.0
+silly afterUntar ok
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/Makefile
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/LICENSE
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/lib
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/lib/server.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/doc
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/doc/index.html
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/examples
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/examples/basic.fallback.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/examples/basic.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/tests
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/unit.test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl/ssl.private.key
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package/tests/ssl/ssl.crt
+verbose gunzed /usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package
+verbose rm'ed /usr/local/lib/node_modules/socket.io/node_modules/policyfile
+verbose renamed [ '/usr/local/lib/node_modules/socket.io/node_modules/___policyfile.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/socket.io/node_modules/policyfile' ]
+verbose caching /usr/local/lib/node_modules/socket.io/node_modules/policyfile/package.json
+verbose loadDefaults policyfile@0.0.4
+info preinstall policyfile@0.0.4
+info preinstall base64id@0.1.0
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/policyfile/package.json
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/base64id/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/policyfile/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/base64id/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /usr/local/lib/node_modules/socket.io/node_modules/policyfile
+info build /usr/local/lib/node_modules/socket.io/node_modules/policyfile
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/policyfile/package.json
+verbose linkStuff [ true,
+verbose linkStuff   '/usr/local/lib/node_modules',
+verbose linkStuff   false,
+verbose linkStuff   '/usr/local/lib/node_modules/socket.io/node_modules' ]
+info linkStuff policyfile@0.0.4
+verbose linkBins policyfile@0.0.4
+verbose linkMans policyfile@0.0.4
+verbose rebuildBundles policyfile@0.0.4
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /usr/local/lib/node_modules/socket.io/node_modules/base64id
+info build /usr/local/lib/node_modules/socket.io/node_modules/base64id
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/base64id/package.json
+verbose linkStuff [ true,
+verbose linkStuff   '/usr/local/lib/node_modules',
+verbose linkStuff   false,
+verbose linkStuff   '/usr/local/lib/node_modules/socket.io/node_modules' ]
+info linkStuff base64id@0.1.0
+verbose linkBins base64id@0.1.0
+verbose linkMans base64id@0.1.0
+verbose rebuildBundles base64id@0.1.0
+info install policyfile@0.0.4
+info install base64id@0.1.0
+info postinstall policyfile@0.0.4
+info postinstall base64id@0.1.0
+verbose installOne cb policyfile@0.0.4
+verbose installOne cb base64id@0.1.0
+silly afterUntar ok
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/mem.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/generate_commands.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/diff_multi_bench_output.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/changelog.md
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/multi_bench.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/auth.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/file.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/multi2.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/unix_socket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/mget.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/monitor.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/backpressure_drain.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/extend.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/subqueries.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/multi.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/pub_sub.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/subquery.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/web_server.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/eval.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/simple.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/sort.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/examples/psubscribe.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib/commands.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib/queue.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib/util.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib/to_array.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser/javascript.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/lib/parser/hiredis.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/hiredis_parser.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/sub_quit_test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/reconnect_test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/buffer_bench.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/re_sub_test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/codec.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub/run
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub/server.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/pubsub/pub.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/plot
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/speed.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/00
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/speed/size-rate.png
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop/run
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop/server.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package/benches/stress/rpushblpop/pub.js
+verbose gunzed /usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package
+verbose rm'ed /usr/local/lib/node_modules/socket.io/node_modules/redis
+verbose renamed [ '/usr/local/lib/node_modules/socket.io/node_modules/___redis.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/socket.io/node_modules/redis' ]
+verbose caching /usr/local/lib/node_modules/socket.io/node_modules/redis/package.json
+verbose loadDefaults redis@0.7.3
+info preinstall redis@0.7.3
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/redis/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/redis/package.json
+verbose readDependencies: using package.json deps
+silly resolved []
+verbose about to build /usr/local/lib/node_modules/socket.io/node_modules/redis
+info build /usr/local/lib/node_modules/socket.io/node_modules/redis
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/redis/package.json
+verbose linkStuff [ true,
+verbose linkStuff   '/usr/local/lib/node_modules',
+verbose linkStuff   false,
+verbose linkStuff   '/usr/local/lib/node_modules/socket.io/node_modules' ]
+info linkStuff redis@0.7.3
+verbose linkBins redis@0.7.3
+verbose linkMans redis@0.7.3
+verbose rebuildBundles redis@0.7.3
+info install redis@0.7.3
+info postinstall redis@0.7.3
+verbose installOne cb redis@0.7.3
+silly afterUntar ok
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/package.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/History.md
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/Makefile
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/bin
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/bin/builder.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/WebSocketMain.swf
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/socket.io.min.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/WebSocketMainInsecure.swf
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/dist/socket.io.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/socket.test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/parser.test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/worker.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/events.test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/io.test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/util.test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node/builder.common.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/test/node/builder.test.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-emitter
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-emitter/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-emitter/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-socket.io-protocol
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-socket.io-protocol/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-socket.io-protocol/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/visionmedia-debug
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/visionmedia-debug/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/visionmedia-debug/debug.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/visionmedia-debug/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/timoxley-to-array
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/timoxley-to-array/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/timoxley-to-array/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-json-fallback
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-json-fallback/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-json-fallback/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-json/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-json/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-bind
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-bind/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/component-bind/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/component.json
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/socket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transport.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/parser.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/emitter.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/util.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transports
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transports/polling-jsonp.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transports/index.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transports/flashsocket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transports/polling-xhr.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transports/polling.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/components/learnboost-engine.io-client/lib/transports/websocket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/socket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transport.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/json.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/parser.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/events.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/io.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/namespace.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/util.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/htmlfile.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/flashsocket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/xhr.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/xhr-polling.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/jsonp-polling.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/transports/websocket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/WebSocketMainInsecure.zip
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/WebSocketMain.swf
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/web_socket.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/README.md
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/.npmignore
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/swfobject.js
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/sample.html
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocket.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMain.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketMainInsecure.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/build.sh
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/WebSocketEvent.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/IWebSocketLogger.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/gsolo/encryption/MD5.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/adobe/net/proxies/RFC2817Socket.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/ClassicReduction.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/bi_internal.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BigInteger.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/MontgomeryReduction.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/IReduction.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/BarrettReduction.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/math/NullReduction.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/Crypto.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/rsa/RSAKey.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509Certificate.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/X509CertificateCollection.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/cert/MozillaRootCertificates.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TestCase.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD5Test.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFBModeTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BlowFishKeyTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TLSPRFTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA224Test.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CTRModeTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/HMACTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/AESKeyTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CBCModeTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ECBModeTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/BigIntegerTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/OFBModeTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA256Test.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/SHA1Test.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/CFB8ModeTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/XTeaKeyTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/RSAKeyTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/TripleDESKeyTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ITestHarness.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/MD2Test.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/DESKeyTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tests/ARC4Test.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/IPRNG.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/TLSPRF.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/ARC4.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/prng/Random.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SSLPad.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CBCMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ISymmetricKey.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFBMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IVMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TripleDESKey.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CTRMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/TLSPad.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/OFBMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/PKCS5.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/AESKey.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ICipher.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/DESKey.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/CFB8Mode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IStreamCipher.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/NullPad.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/ECBMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/XTeaKey.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/IPad.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/dump.txt
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/BlowFishKey.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/SimpleIVMode.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/symmetric/aeskey.pl
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSecurityParameters.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConnectionState.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocket.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEvent.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/CipherSuites.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/BulkCiphers.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/ISecurityParameters.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLConnectionState.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSEngine.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLEvent.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSSocketEvent.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/MACs.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSError.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/KeyExchanges.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/IConnectionState.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSConfig.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/TLSTest.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/tls/SSLSecurityParameters.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA256.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHMAC.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/IHash.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD2.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHABase.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/HMAC.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MD5.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA224.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/SHA1.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/crypto/hash/MAC.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Hex.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Memory.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/Base64.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/ArrayUtil.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Type.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PEM.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Sequence.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Integer.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/DER.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/PrintableString.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/Set.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/OID.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ByteString.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/IAsn1Type.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/UTCTime.as
+silly asyncMap in gTP /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package/lib/vendor/web-socket-js/flash-src/com/hurlant/util/der/ObjectIdentifier.as
+verbose gunzed /usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package
+verbose rm'ed /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client
+verbose renamed [ '/usr/local/lib/node_modules/socket.io/node_modules/___socket.io-client.npm/package',
+verbose renamed   '/usr/local/lib/node_modules/socket.io/node_modules/socket.io-client' ]
+verbose caching /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose loadDefaults socket.io-client@0.9.16
+info preinstall socket.io-client@0.9.16
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose readDependencies: using package.json deps
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client/package.json
+verbose readDependencies: using package.json deps
+verbose cache add [ 'uglify-js@1.2.5', null ]
+silly cache add: name, spec, args [ undefined, 'uglify-js@1.2.5', [ 'uglify-js@1.2.5', null ] ]
+verbose parsed url { pathname: 'uglify-js@1.2.5',
+verbose parsed url   path: 'uglify-js@1.2.5',
+verbose parsed url   href: 'uglify-js@1.2.5' }
+silly cache add: name, spec, args [ 'uglify-js', '1.2.5', [ 'uglify-js', '1.2.5' ] ]
+verbose parsed url { pathname: '1.2.5', path: '1.2.5', href: '1.2.5' }
+verbose addNamed [ 'uglify-js', '1.2.5' ]
+verbose addNamed [ '1.2.5', '1.2.5' ]
+verbose cache add [ 'ws@0.4.x', null ]
+silly cache add: name, spec, args [ undefined, 'ws@0.4.x', [ 'ws@0.4.x', null ] ]
+verbose parsed url { pathname: 'ws@0.4.x', path: 'ws@0.4.x', href: 'ws@0.4.x' }
+silly cache add: name, spec, args [ 'ws', '0.4.x', [ 'ws', '0.4.x' ] ]
+verbose parsed url { pathname: '0.4.x', path: '0.4.x', href: '0.4.x' }
+verbose addNamed [ 'ws', '0.4.x' ]
+verbose addNamed [ null, '>=0.4.0- <0.5.0-' ]
+silly name, range, hasData [ 'ws', '>=0.4.0- <0.5.0-', false ]
+verbose cache add [ 'xmlhttprequest@1.4.2', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'xmlhttprequest@1.4.2',
+silly cache add: name, spec, args   [ 'xmlhttprequest@1.4.2', null ] ]
+verbose parsed url { pathname: 'xmlhttprequest@1.4.2',
+verbose parsed url   path: 'xmlhttprequest@1.4.2',
+verbose parsed url   href: 'xmlhttprequest@1.4.2' }
+silly cache add: name, spec, args [ 'xmlhttprequest', '1.4.2', [ 'xmlhttprequest', '1.4.2' ] ]
+verbose parsed url { pathname: '1.4.2', path: '1.4.2', href: '1.4.2' }
+verbose addNamed [ 'xmlhttprequest', '1.4.2' ]
+verbose addNamed [ '1.4.2', '1.4.2' ]
+verbose cache add [ 'active-x-obfuscator@0.0.1', null ]
+silly cache add: name, spec, args [ undefined,
+silly cache add: name, spec, args   'active-x-obfuscator@0.0.1',
+silly cache add: name, spec, args   [ 'active-x-obfuscator@0.0.1', null ] ]
+verbose parsed url { pathname: 'active-x-obfuscator@0.0.1',
+verbose parsed url   path: 'active-x-obfuscator@0.0.1',
+verbose parsed url   href: 'active-x-obfuscator@0.0.1' }
+silly cache add: name, spec, args [ 'active-x-obfuscator',
+silly cache add: name, spec, args   '0.0.1',
+silly cache add: name, spec, args   [ 'active-x-obfuscator', '0.0.1' ] ]
+verbose parsed url { pathname: '0.0.1', path: '0.0.1', href: '0.0.1' }
+verbose addNamed [ 'active-x-obfuscator', '0.0.1' ]
+verbose addNamed [ '0.0.1', '0.0.1' ]
+verbose raw, before any munging uglify-js/1.2.5
+verbose url resolving [ 'https://registry.npmjs.org/', './uglify-js/1.2.5' ]
+verbose url resolved https://registry.npmjs.org/uglify-js/1.2.5
+http GET https://registry.npmjs.org/uglify-js/1.2.5
+verbose raw, before any munging xmlhttprequest/1.4.2
+verbose url resolving [ 'https://registry.npmjs.org/', './xmlhttprequest/1.4.2' ]
+verbose url resolved https://registry.npmjs.org/xmlhttprequest/1.4.2
+http GET https://registry.npmjs.org/xmlhttprequest/1.4.2
+verbose raw, before any munging active-x-obfuscator/0.0.1
+verbose url resolving [ 'https://registry.npmjs.org/', './active-x-obfuscator/0.0.1' ]
+verbose url resolved https://registry.npmjs.org/active-x-obfuscator/0.0.1
+http GET https://registry.npmjs.org/active-x-obfuscator/0.0.1
+verbose about to build /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client
+ERR! error installing socket.io-client@0.9.16
+info unbuild /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client
+verbose from cache /usr/local/lib/node_modules/socket.io/node_modules/socket.io-client/package.json
+info preuninstall socket.io-client@0.9.16
+info uninstall socket.io-client@0.9.16
+verbose unbuild socket.io-client@0.9.16 [ false,
+verbose unbuild socket.io-client@0.9.16   '/usr/local/lib/node_modules',
+verbose unbuild socket.io-client@0.9.16   '/usr/local/lib/node_modules/socket.io/node_modules' ]
+info postuninstall socket.io-client@0.9.16
+verbose installOne cb socket.io-client@0.9.16
+verbose about to build /usr/local/lib/node_modules/socket.io
+ERR! error installing socket.io@0.9.16
+info unbuild /usr/local/lib/node_modules/socket.io
+verbose from cache /usr/local/lib/node_modules/socket.io/package.json
+info preuninstall socket.io@0.9.16
+info uninstall socket.io@0.9.16
+verbose unbuild socket.io@0.9.16 [ true,
+verbose unbuild socket.io@0.9.16   '/usr/local/lib/node_modules',
+verbose unbuild socket.io@0.9.16   '/usr/local/lib/node_modules' ]
+info postuninstall socket.io@0.9.16
+verbose raw, before any munging ws
+verbose url resolving [ 'https://registry.npmjs.org/', './ws' ]
+verbose url resolved https://registry.npmjs.org/ws
+verbose etag "8Q3V4MXYYW5E8XK7Q8TUZD5I0"
+http GET https://registry.npmjs.org/ws
+silly get cb [ 304, undefined ]
+verbose etag ws from cache
+silly name, range, hasData 2 [ 'ws', '>=0.4.0- <0.5.0-', true ]
+silly versions [ 'ws',
+silly versions   [ '0.2.6',
+silly versions     '0.2.8',
+silly versions     '0.2.9',
+silly versions     '0.3.0',
+silly versions     '0.3.1',
+silly versions     '0.3.2',
+silly versions     '0.3.3',
+silly versions     '0.3.4',
+silly versions     '0.3.4-2',
+silly versions     '0.3.5',
+silly versions     '0.3.5-2',
+silly versions     '0.3.5-3',
+silly versions     '0.3.5-4',
+silly versions     '0.3.6',
+silly versions     '0.3.7',
+silly versions     '0.3.8',
+silly versions     '0.3.9',
+silly versions     '0.4.0',
+silly versions     '0.4.1',
+silly versions     '0.4.2',
+silly versions     '0.4.3',
+silly versions     '0.4.5',
+silly versions     '0.4.6',
+silly versions     '0.4.7',
+silly versions     '0.4.8',
+silly versions     '0.4.9',
+silly versions     '0.4.10',
+silly versions     '0.4.11',
+silly versions     '0.4.12',
+silly versions     '0.4.13',
+silly versions     '0.4.14',
+silly versions     '0.4.15',
+silly versions     '0.4.16',
+silly versions     '0.4.17',
+silly versions     '0.4.18',
+silly versions     '0.4.19',
+silly versions     '0.4.20',
+silly versions     '0.4.21',
+silly versions     '0.4.22',
+silly versions     '0.4.23',
+silly versions     '0.4.24',
+silly versions     '0.4.25',
+silly versions     '0.4.27' ] ]
+verbose bin dist [ '0.6-ares1.9.1-evundefined-openssl1.0.1c-v83.8.9.20-linux-arm-3.6.11+',
+verbose bin dist   { shasum: '077d3a48b6e0b5a96f68f3b38a94ea1ec72c2555',
+verbose bin dist     tarball: 'http://registry.npmjs.org/ws/-/ws-0.4.27.tgz' } ]
+verbose installOne cb socket.io@0.9.16
+ERR! Error: failed to fetch from registry: uglify-js/1.2.5
+ERR!     at /usr/share/npm/lib/utils/npm-registry-client/get.js:139:12
+ERR!     at cb (/usr/share/npm/lib/utils/npm-registry-client/request.js:31:9)
+ERR!     at Request._callback (/usr/share/npm/lib/utils/npm-registry-client/request.js:136:18)
+ERR!     at Request.callback (/usr/lib/nodejs/request/main.js:119:22)
+ERR!     at Request.<anonymous> (/usr/lib/nodejs/request/main.js:212:58)
+ERR!     at Request.emit (events.js:88:20)
+ERR!     at ClientRequest.<anonymous> (/usr/lib/nodejs/request/main.js:209:10)
+ERR!     at ClientRequest.emit (events.js:67:17)
+ERR!     at CleartextStream.socketErrorListener (http.js:1188:9)
+ERR!     at CleartextStream.emit (events.js:67:17)
+ERR! You may report this log at:
+ERR!     <http://bugs.debian.org/npm>
+ERR! or use
+ERR!     reportbug --attach /home/pi/dev/lights/npm-debug.log npm
+ERR! 
+ERR! System Linux 3.6.11+
+ERR! command "/usr/bin/nodejs" "/usr/bin/npm" "-g" "install" "socket.io"
+ERR! cwd /home/pi/dev/lights
+ERR! node -v v0.6.19
+ERR! npm -v 1.1.4
+ERR! message failed to fetch from registry: uglify-js/1.2.5
+verbose exit [ 1, true ]
