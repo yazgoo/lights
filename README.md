@@ -1,4 +1,5 @@
-A home automation console based on mqtt.
+A modular home automation console based on mqtt.
+Here is an instance:
 
 ![screenshot 0](https://github.com/yazgoo/lights/raw/mqtt/screenshot/mqtt.png)
 
