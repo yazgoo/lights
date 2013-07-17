@@ -1,3 +1,4 @@
+A home automation console based on mqtt.
 
 ![screenshot 0](https://github.com/yazgoo/lights/raw/mqtt/screenshot/mqtt.png)
 
