@@ -9,7 +9,9 @@ while true
         while true
             sleep 10
         end
-    rescue
-        p $!
+    rescue => e
+        puts e.inspect
+        puts e.backtrace
+        sleep 20
     end
 end
