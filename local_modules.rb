@@ -7,6 +7,7 @@ VideoPlayer.new
 Downloader.new VIDEOS_PATH
 Heyu.new
 Alarm.new :name=> "alarm", :aliases => {'actuate' => ACTUATE_PATH}
+Alarm.new :name=> "alarm2", :aliases => {'actuate' => ACTUATE_PATH}
 FileLister.new VIDEOS_PATH
 System.new :name => "shutter",
     :commands => {:up => {:command => RUN_GPIO_PATH + "up", :icon => "arrow-up"},

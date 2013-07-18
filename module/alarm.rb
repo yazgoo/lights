@@ -25,7 +25,13 @@ class Alarm < HomeModule
                 :default => Proc.new {get_cronvalues :hour}},
             :minute => {:type => :range, :start => 0, :end => 59, :step => 5,
                 :default => Proc.new {get_cronvalues :minute}},
-            :command => {:type => :string, :default => Proc.new {get_cronvalues :command}}
+            :command => {:type => :string, :default => Proc.new {
+                    command = get_cronvalues :command
+                    @params[:aliases].each_pair do |key, value|
+                        command.gsub! value, key
+                    end
+                    command
+                }}
         }},
             Proc.new { |name, hour, minute, command|
             @params[:aliases].each_pair do |key, value|
