@@ -17,7 +17,7 @@ class Alarm < HomeModule
         crontab.commit
     end
     def setup
-        @name = @params
+        @name = @params[:name]
         alarm = get_cronvalues
         set_cronvalues 9, 15, "echo 42" if alarm.nil?
         action :set, {:parameters => {
@@ -28,6 +28,9 @@ class Alarm < HomeModule
             :command => {:type => :string, :default => Proc.new {get_cronvalues :command}}
         }},
             Proc.new { |name, hour, minute, command|
+            @params[:aliases].each_pair do |key, value|
+                command.gsub! key, value
+            end
             puts "set #{name}, #{hour} #{minute}"
             set_cronvalues hour, minute, command
         }

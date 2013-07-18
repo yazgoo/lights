@@ -2,10 +2,11 @@
 # launch these with module/modules.rb
 RUN_GPIO_PATH="#{ENV['HOME']}/dev/wiringPi/gpio/run_"
 VIDEOS_PATH="#{ENV['HOME']}/Videos"
+ACTUATE_PATH="#{ENV['HOME']}/dev/lights/lights_actuate.rb"
 VideoPlayer.new
 Downloader.new VIDEOS_PATH
 Heyu.new
-Alarm.new "alarm"
+Alarm.new :name=> "alarm", :aliases => {'actuate' => ACTUATE_PATH}
 FileLister.new VIDEOS_PATH
 System.new :name => "shutter",
     :commands => {:up => {:command => RUN_GPIO_PATH + "up", :icon => "arrow-up"},
