@@ -8,7 +8,7 @@ Install
 =======
 
 - $ sudo apt-get install mosquitto
-
+- $ sudo apt-get install lighthttpd
 
 Prerequisites
 =============
