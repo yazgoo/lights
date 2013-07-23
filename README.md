@@ -10,7 +10,7 @@ Install
 - $ sudo apt-get install mosquitto
 - $ sudo apt-get install lighthttpd
 - install [mod_websockets](https://github.com/nori0428/mod_websocket/wiki/for-Ubuntu-Users), ie:
-    - $ apt-get install automake libtool openssl libssl-dev libev-dev libcunit1 libcunit1-dev libicu-dev bison
+    - $ apt-get install automake libtool openssl libssl-dev libev-dev libcunit1 libcunit1-dev libicu-dev bison flex
     - cd mod_websockets; ./bootstrap && ./configure && make clean check
 
 Prerequisites
