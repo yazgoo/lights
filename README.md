@@ -9,6 +9,7 @@ Install
 
 - $ sudo apt-get install mosquitto
 - $ sudo apt-get install lighthttpd
+- install [mod_websockets](https://github.com/nori0428/mod_websocket/wiki/for-Ubuntu-Users)
 
 Prerequisites
 =============
