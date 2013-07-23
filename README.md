@@ -4,6 +4,12 @@ Here is an instance:
 ![screenshot 0](https://github.com/yazgoo/lights/raw/mqtt/screenshot/mqtt.png)
 
 
+Install
+=======
+
+- $ sudo apt-get install mosquitto
+
+
 Prerequisites
 =============
 
