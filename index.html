@@ -17,7 +17,6 @@
 	<link rel="stylesheet" href="extensions/status/deck.status.css">
 	<link rel="stylesheet" href="extensions/hash/deck.hash.css">
 	<link rel="stylesheet" href="extensions/scale/deck.scale.css">
-
 	<!-- Style theme. More available in /themes/style/ or create your own. -->
 	<link rel="stylesheet" href="themes/style/web-2.0.css">
 	
@@ -79,24 +78,27 @@
 	<h2>Architecture</h2>
     <img src='architecture.png'/>
     <ul>
-        <li>An agent can be an either actuator or a sensor - or both</li>
         <li>Based on MQTT (topic, value)</li>
+        <li>An agent can be an either actuator or a sensor - or both</li>
     </ul>
 </section>
 
 <section class="slide">
 	<h2>Protocol example: actuators</h2>
     <ul>
-        <li>Console: /home/actuators list</li>
-        <li>Shutter actuator: /home/actuators/shutter/values {"up":{"icon":"arrow-up"},"down":{"icon":"arrow-down"}}</li>
-        <li>Console, displays:<img src="shutter.png"/>, user clicks up
-        <li>Console: /home/actuators/shutter up</li>
+        <li class="slide">Console: <pre>/home/actuators list</pre></li>
+        <li class="slide">Shutter actuator:
+ <pre>/home/actuators/shutter/values
+{"up":{"icon":"arrow-up"},"down":{"icon":"arrow-down"}}</pre></li>
+        <li class="slide">Console, displays:<img src="shutter.png"/>
+        <li class="slide">User clicks up</li>
+        <li class="slide">Console: <pre>/home/actuators/shutter up</pre></li>
     </ul>
 </section>
 
 <section class="slide">
 	<h2>Ruby actuator example: </h2>
-    <pre>
+        <pre>
 RUN_GPIO_PATH = "/path/to/gpio/program "
 class Shutter < HomeModule
   def setup
@@ -108,15 +110,16 @@ class Shutter < HomeModule
     }
   end
 end
-    </pre>
+        </pre>
 </section>
 <section class="slide">
 <img src="screenshot.png"/>
 </section>
 <section class="slide">
 <h2>Code available @</h2>
-<a href='https://github.com/yazgoo/lights/tree/mqtt'>https://github.com/yazgoo/lights/tree/mqtt</a>
-<br/> (unstable branch - ugly)
+<a href='https://github.com/yazgoo/lights/tree/mqtt'>https://github.com/yazgoo/lights/tree/mqtt  (unstable branch - ugly)</a>
+<h2>Contact</h2>
+<a href='irc://irc.iiens.net/lights'>#lights on irc.iiens.net</a>
 </section>
 <!-- End slides. -->
 
@@ -160,7 +163,6 @@ end
 <script src="extensions/status/deck.status.js"></script>
 <script src="extensions/navigation/deck.navigation.js"></script>
 <script src="extensions/scale/deck.scale.js"></script>
-
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
 	$(function() {
