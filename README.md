@@ -13,7 +13,7 @@ Install
     - $ apt-get install automake libtool openssl libssl-dev libev-dev libcunit1 libcunit1-dev libicu-dev bison flex
     - cd mod_websockets; ./bootstrap && ./configure && make clean check
     - ./configure --lighttpd=/path/to/lighttpd_source
-- sudo apt-get install libpcre3-dev lbzip2
+- sudo apt-get install libpcre3-dev libbz2-dev
 - build lighttpd
 
 Prerequisites
