@@ -8,10 +8,13 @@ Install
 =======
 
 - $ sudo apt-get install mosquitto
-- $ sudo apt-get install lighthttpd
+- get latest httpd from source:
 - install [mod_websockets](https://github.com/nori0428/mod_websocket/wiki/for-Ubuntu-Users), ie:
     - $ apt-get install automake libtool openssl libssl-dev libev-dev libcunit1 libcunit1-dev libicu-dev bison flex
     - cd mod_websockets; ./bootstrap && ./configure && make clean check
+    - ./configure --lighttpd=/path/to/lighttpd_source
+- sudo apt-get install libpcre3-dev lbzip2
+- build lighttpd
 
 Prerequisites
 =============
